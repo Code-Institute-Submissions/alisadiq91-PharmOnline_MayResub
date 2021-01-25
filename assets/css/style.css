@@ -1,39 +1,93 @@
 header {
-    background-color: rgba(33, 19, 54, 0.753);
+
     text-align: center;
     height: 220px;
     border-bottom: solid 2px white;
-    background: linear-gradient(to bottom,rgba(33,19,54,0.753),rgb(100, 0, 100));
+    background: linear-gradient(to bottom,rgba(0, 238, 255, 0.753), rgb(255, 255, 255));
 }
 
 
 .logo {
    font-family: 'Roboto Condensed', sans-serif;
-   color: rgb(11, 216, 62);
+   color: rgb(0, 79, 182);
    font-size: 70px;
 }
 
 .logo:hover {
     color: white;
     text-decoration: none;
-}
+     }
+
 
 .logo-position {
     padding-top: 30px;
+    padding-bottom: 20px;
 }
 
-.link{
+.header-link{
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
-    color: rgb(11, 216, 62);
+    color: rgba(1, 45, 139, 0.541);
+    margin-left: 50px;
+    margin-right: 50px;
+    
 }
 
-.link:hover {
-    color: grey;
+
+.header-link:hover {
+    color: white;
     text-decoration: none;
      }
 
 .nhs-logo {
     position: absolute;
     margin-top: 15px;
+}
+
+.opening-times {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 1050px;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+}
+
+footer {
+    text-align: center;
+    height: 100px;
+    background: linear-gradient(to bottom,rgb(255, 255, 255), rgba(0, 238, 255, 0.753));
+}
+
+.footer-title {
+    font-family: 'Raleway', sans-serif;
+     color: rgb(0, 79, 182);
+    font-size: 20px;
+    padding-top : 10px;
+}
+
+.contact-footer h6 {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 15px;
+}
+
+.socials-list, .downloads-list {
+    padding: 0;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+
+.main-section {
+    background: rgb(255, 255, 255);
+    height: 600px;
 }
