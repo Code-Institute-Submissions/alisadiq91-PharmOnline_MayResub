@@ -1,3 +1,5 @@
+/* header */
+
 header {
 
     text-align: center;
@@ -9,7 +11,7 @@ header {
 
 .logo {
    font-family: 'Roboto Condensed', sans-serif;
-   color: rgb(0, 79, 182);
+   color: navy;
    font-size: 70px;
 }
 
@@ -42,16 +44,19 @@ header {
 .nhs-logo {
     position: absolute;
     margin-top: 15px;
+    margin-left: 15px;
 }
 
 .opening-times {
     position: absolute;
     margin-top: 15px;
-    margin-left: 1050px;
+    padding-left: 1050px;
     font-size: 12px;
     font-family: 'Raleway', sans-serif;
     color: grey;
 }
+
+/* footer  */
 
 footer {
     text-align: center;
@@ -86,8 +91,43 @@ footer {
     color: white;
 }
 
+/* main section */
 
 .main-section {
-    background: rgb(255, 255, 255);
-    height: 600px;
+    padding-bottom: 50px;
 }
+.main-list {
+    font-family: 'Raleway', sans-serif;
+    padding-top: 30px;
+    list-style-type: none;
+ 
+   
+}
+.fa-clipboard-check {
+    font-size: 30px;
+    color: navy;
+}
+
+.main-list-item { 
+ padding-top: 20px;
+    font-size: 15px;
+    color: navy;
+    font-style: italic;
+    font-weight: bold;
+   
+}
+
+/* steps */
+
+.steps {
+    list-style-type: none;
+    text-align: center;
+   
+    
+}
+
+.steps-individual {
+    border: 0.5px solid black;
+    margin-bottom: 30px;
+}
+

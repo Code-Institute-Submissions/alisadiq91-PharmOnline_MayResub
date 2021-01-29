@@ -6,24 +6,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
+    
     <title>PharmOnline</title>
        
 
 </head>
 <body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
 <header>  
-    <div class="container">
+    <div class="container-fluid">
     <div class="row">  
     <h1 class="logo-position col-12"><a class="logo" href="#"><i class="fas fa-laptop-medical"></i>  PharmOnline</a></h1>
     <img class="nhs-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/NHS-Logo.svg/371px-NHS-Logo.svg.png" alt="nhslogo" width="100" height="45">
+    
+    <!-- move this to top right without padding?
     <h6 class="opening-times"><i class="far fa-clock"></i>    8am-10pm 7 days a week<br><i class="fas fa-phone"></i>    Call us on : 0800467872</h6>
+-->
 <ul class=" col-12"><li class="header-list list-inline-item"><a class="header-link" href="#"><i class="fas fa-sign-in-alt"></i>    Register/Login</a></li>
 <li class="header-list list-inline-item"><a class="header-link" href="#"><i class="far fa-address-card"></i>    About Us</a></li>
 <li class="header-list list-inline-item"><a class="header-link" href="#"><i class="fas fa-virus"></i>    Covid-19</a></li>
@@ -31,24 +37,51 @@
 </ul></div>  </div>
 </header>
 
-
+<!-- main section with image and bullet points -->
 <section class="main-section">
+<div class="container-fluid">
+<div class="row">
+    <div class="col-6">
+        <img src="https://image.freepik.com/free-photo/happy-customer-holding-her-medicine_13339-298059.jpg" alt="happy patient recieving medication">
+    </div>
+    <div class="col-6">
+        <img src="https://s3.amazonaws.com/gpandme/img/nhs-logo.png" alt="providing nhs services" width="568" height="150">
+        <ul class = "main-list">
+            <li class = "main-list-item"><i class="fas fa-clipboard-check"></i> &nbsp; &nbsp; &nbsp; &nbsp;Prescriptions delivered right to your door</li>
+             <li class = "main-list-item"><i class="fas fa-clipboard-check"></i> &nbsp; &nbsp; &nbsp; &nbsp;Easily order your prescription through our app</li>
+              <li class = "main-list-item"><i class="fas fa-clipboard-check"></i> &nbsp; &nbsp; &nbsp; &nbsp;Pharmacist advice for free through our app</li>
+               <li class = "main-list-item"><i class="fas fa-clipboard-check"></i> &nbsp; &nbsp; &nbsp; &nbsp;Reminders for when to order your medication</li>
+        </ul>
+    </div>
+</div>
 
+</div>
 
 
 </section>
+
+<!-- steps to order -->
 <section class="steps">
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-sm-12 col-lg-4">
+            <ul class="steps">
+                <li class="steps-individual"><img class="steps-image" src="https://4d0q7u11k31p1qnkosal8q2e-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/pexels-photo-1083931-720x460.jpeg" alt="typing on phone" width="300" height="200"><br>1. Order your medication</li>
+                <li class="steps-individual"><img src="https://cuencahighlife.com/wp-content/uploads/2020/02/new-haven-ct-waterbury-pharmacy-body1.jpg" alt="pharmacist checking prescription" width="300" height="200"><br>3. Pharmacy team assembles your medication</li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <ul class="steps">
+                <li class="steps-individual"><img src="https://nursingnotes.co.uk/wp-content/uploads/2019/01/Medication.jpeg" alt="medication shelves" width="300" height="200"><br>2. We order your medication from your GP</li>
+                <li class="steps-individual"><img src="https://images.ctfassets.net/nqqfspfdquz1/3ZL84FFcohI25vIZLSlLcd/7d0e0606f61c372e6e9d40ef57aa3906/Coop_Health_Free_repeat_prescription_delivery_service.jpg?fm=webp&q=60&w=600&h=338" alt="medication delivered" width="300" height="200"><br>4. Medication is delivered</li>
+            </ul>
+        </div>
+    </div>
 
-
-
-</section>
-<section class="faqs">
-
-
-
+</div>
 </section>
 <footer>
-<div class="container">
+<div class="container-fluid">
 <div class="row">
     <div class="contact-footer col-4">
 <h4 class="footer-title">Contact Us</h4>
