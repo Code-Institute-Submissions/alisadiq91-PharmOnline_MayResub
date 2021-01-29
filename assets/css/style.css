@@ -129,5 +129,6 @@ footer {
 .steps-individual {
     border: 0.5px solid black;
     margin-bottom: 30px;
+    color: green;
 }
 
