@@ -16,7 +16,7 @@ header {
 }
 
 .logo:hover {
-    color: white;
+    color: rgb(0, 79, 182);
     text-decoration: none;
      }
 
@@ -29,7 +29,7 @@ header {
 .header-link{
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
-    color: rgba(1, 45, 139, 0.541);
+    color: navy;
     margin-left: 50px;
     margin-right: 50px;
     
@@ -37,7 +37,7 @@ header {
 
 
 .header-link:hover {
-    color: white;
+    color: rgb(0, 79, 182);
     text-decoration: none;
      }
 
@@ -66,7 +66,7 @@ footer {
 
 .footer-title {
     font-family: 'Raleway', sans-serif;
-     color: rgb(0, 79, 182);
+     color: navy;
     font-size: 20px;
     padding-top : 10px;
 }
@@ -88,7 +88,7 @@ footer {
 }
 
 .footer-link:hover {
-    color: white;
+    color: rgb(0, 79, 182);
 }
 
 /* main section */
@@ -122,13 +122,70 @@ footer {
 .steps {
     list-style-type: none;
     text-align: center;
+    
+    padding-top: 30px;
    
     
 }
 
-.steps-individual {
-    border: 0.5px solid black;
-    margin-bottom: 30px;
-    color: green;
+.steps-section {
+background-color: black;
+border-top: 15px solid navy;
+border-bottom: 15px solid navy;
 }
 
+.steps-title {
+    color: white;
+    text-align: center;
+     font-family: 'Roboto Condensed', sans-serif;
+     padding-top: 50px;
+
+}
+
+.steps-individual {
+    border: 1px solid white;
+    margin-bottom: 30px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 30px;
+}
+
+.show-me-1, .show-me-2, .show-me-3, .show-me-4 {
+    display : none;
+    width:300px;
+    height:236px;
+    vertical-align: center;
+    padding-top: 30px;
+}
+
+.step-title {
+ font-size: 20px;
+ padding-top: 20px;
+}
+
+/* download advertisement */
+
+.download-advert {
+    position: relative;
+  text-align: center;
+  color: black;
+}
+
+.download-info-position {
+    position: absolute;
+  bottom: 30%;
+  left: 10%;
+}
+.download-background {
+    background-size: cover;
+    background-repeat: none;
+    
+}
+
+.download-title {
+    padding-bottom: 50px;
+}
+
+.download-link {
+    padding-bottom: 50px;
+}
