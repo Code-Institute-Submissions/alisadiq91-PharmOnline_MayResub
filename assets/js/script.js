@@ -60,5 +60,30 @@
   });
 
 
+  var action = 'click';
+  var speed = "500";
 
+  $(document).ready(function(){
 
+        $('.question').on(action,function(){
+
+            $(this).next().slideToggle(speed)
+            .siblings('.answer').slideUp();
+
+            var img = $(this).children('.img');
+
+            $('.img').not(img).removeClass('rotate');
+
+            img.toggleClass('rotate');
+
+        });
+  });
+
+  $(document).ready(function(){
+
+    $('.question').on("click",function(){
+        $(this).show('.fa-arrow-circle-down');
+
+        
+    });
+  });

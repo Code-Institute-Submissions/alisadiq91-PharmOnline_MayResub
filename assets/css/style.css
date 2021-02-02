@@ -4,7 +4,7 @@ header {
 
     text-align: center;
     height: 220px;
-    border-bottom: solid 2px white;
+    border-bottom: solid 2px navy;
     background: linear-gradient(to bottom,rgba(0, 238, 255, 0.753), rgb(255, 255, 255));
 }
 
@@ -13,6 +13,7 @@ header {
    font-family: 'Roboto Condensed', sans-serif;
    color: navy;
    font-size: 70px;
+   font-weight: bold;
 }
 
 .logo:hover {
@@ -32,6 +33,7 @@ header {
     color: navy;
     margin-left: 50px;
     margin-right: 50px;
+    font-weight: bold;
     
 }
 
@@ -60,21 +62,25 @@ header {
 
 footer {
     text-align: center;
-    height: 100px;
-    background: linear-gradient(to bottom,rgb(255, 255, 255), rgba(0, 238, 255, 0.753));
+    height: 150px;
+    background: linear-gradient(to top,rgb(255, 255, 255), rgba(0, 238, 255, 0.753));
+    border-top: 2px solid navy;
 }
 
 .footer-title {
     font-family: 'Raleway', sans-serif;
      color: navy;
     font-size: 20px;
-    padding-top : 10px;
+    padding-top : 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
 }
 
 .contact-footer h6 {
     font-family: 'Raleway', sans-serif;
     color: black;
     font-size: 15px;
+    font-weight: bold;
 }
 
 .socials-list, .downloads-list {
@@ -85,6 +91,7 @@ footer {
     text-decoration: none;
     color: black;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .footer-link:hover {
@@ -94,12 +101,14 @@ footer {
 /* main section */
 
 .main-section {
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 .main-list {
     font-family: 'Raleway', sans-serif;
-    padding-top: 30px;
+    padding-top: 90px;
     list-style-type: none;
+    font-weight: bold;
  
    
 }
@@ -114,7 +123,18 @@ footer {
     color: navy;
     font-style: italic;
     font-weight: bold;
+    
    
+}
+
+.dl-link{
+    padding-top: 15px;
+    margin-left: 50px;
+}
+
+.nhs-service {
+    position: absolute;
+    right: 10%;
 }
 
 /* steps */
@@ -129,25 +149,26 @@ footer {
 }
 
 .steps-section {
-background-color: black;
-border-top: 15px solid navy;
-border-bottom: 15px solid navy;
+background-image: linear-gradient(to top,rgba(0, 238, 255, 0.753), rgb(255, 255, 255));
+border-top: 5px solid navy;
 }
 
 .steps-title {
-    color: white;
+    color: navy;
     text-align: center;
      font-family: 'Roboto Condensed', sans-serif;
      padding-top: 50px;
+     font-weight: bold;
 
 }
 
 .steps-individual {
-    border: 1px solid white;
+    border: 3px ridge navy;
     margin-bottom: 30px;
-    color: white;
+    color: navy;
     font-family: 'Raleway', sans-serif;
     padding: 30px;
+    font-weight: bold;
 }
 
 .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
@@ -156,36 +177,51 @@ border-bottom: 15px solid navy;
     height:236px;
     vertical-align: center;
     padding-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .step-title {
  font-size: 20px;
  padding-top: 20px;
+ font-weight: bold;
 }
 
-/* download advertisement */
+/* FAQs page */
 
-.download-advert {
-    position: relative;
-  text-align: center;
-  color: black;
-}
-
-.download-info-position {
-    position: absolute;
-  bottom: 30%;
-  left: 10%;
-}
-.download-background {
-    background-size: cover;
-    background-repeat: none;
-    
-}
-
-.download-title {
+.faqs {
+    padding-top: 50px;
     padding-bottom: 50px;
+    background-image: linear-gradient(to top,rgba(0, 238, 255, 0.753), rgb(255, 255, 255));
 }
 
-.download-link {
-    padding-bottom: 50px;
+.faqs-title {
+     font-family: 'Raleway', sans-serif;
+     color: navy;
+     text-align: center;
+     font-size: 30px;
+     padding-bottom: 30px;
+     font-weight: bold;
+}
+
+.question {
+    font-size: 25px;
+    color: navy;
+     font-family: 'Raleway', sans-serif;
+     border-bottom: solid 2px rgba(3, 3, 3, 0.473);
+     padding-bottom: 10px;
+     cursor: pointer;
+     font-weight: bold;
+}
+.answer {
+    display: none;
+    font-size: 15px;
+     font-family: 'Raleway', sans-serif;
+     color: black;
+     font-weight: bold;
+}
+
+.faqs-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
