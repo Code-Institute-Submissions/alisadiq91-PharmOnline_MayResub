@@ -5,7 +5,7 @@ header {
     text-align: center;
     height: 220px;
     border-bottom: solid 2px navy;
-    background: linear-gradient(to bottom,rgba(0, 238, 255, 0.753), rgb(255, 255, 255));
+    background: linear-gradient(to bottom ,rgb(255, 255, 255), rgba(0, 238, 255, 0.753));
 }
 
 
@@ -224,4 +224,42 @@ border-top: 5px solid navy;
 .faqs-item {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+/* Find us page */
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.findus-title {
+    text-align: center;
+    padding-top: 50px;
+     font-family: 'Raleway', sans-serif;
+     color: black;
+     font-weight: bold;
+}
+
+.branches-title {
+    text-align: center;
+    padding-bottom: 20px;
+     font-family: 'Raleway', sans-serif;
+     color: black;
+     font-weight: bold;
+}
+
+.branches-list {
+text-align: center;
+    margin-bottom: 50px;
+     font-family: 'Raleway', sans-serif;
+     color: black;
+     
+}
+
+.branch-item {
+    margin-left: 100px;
+    margin-right: 100px;
 }
