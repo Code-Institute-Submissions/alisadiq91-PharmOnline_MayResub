@@ -339,11 +339,15 @@ a { color: inherit; }
     padding-bottom: 30px;
 }
 
-ul .steps {
+.steps {
     padding-left: 0;
 }
 
 .covid-video iframe {
     width: 90%;
+}
+
+.branches-list {
+    padding-left: 0;
 }
 }
