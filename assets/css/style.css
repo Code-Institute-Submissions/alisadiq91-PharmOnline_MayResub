@@ -95,7 +95,12 @@ footer {
 }
 
 .footer-link:hover {
-    color: rgb(0, 79, 182);
+    color: rgba(0, 79, 182, 0.603);
+}
+
+.tel:hover {
+    text-decoration: none;
+color: rgba(0, 79, 182, 0.603);
 }
 
 /* main section */
@@ -197,7 +202,7 @@ border-top: 5px solid navy;
 
 .faqs-title {
      font-family: 'Raleway', sans-serif;
-     color: navy;
+     color: black;
      text-align: center;
      font-size: 30px;
      padding-bottom: 30px;
@@ -206,7 +211,7 @@ border-top: 5px solid navy;
 
 .question {
     font-size: 25px;
-    color: navy;
+    color: black;
      font-family: 'Raleway', sans-serif;
      border-bottom: solid 2px rgba(3, 3, 3, 0.473);
      padding-bottom: 10px;
@@ -217,7 +222,7 @@ border-top: 5px solid navy;
     display: none;
     font-size: 15px;
      font-family: 'Raleway', sans-serif;
-     color: black;
+     color: navy;
      font-weight: bold;
 }
 
@@ -268,3 +273,34 @@ text-align: center;
 .findus-page {
     background-image: linear-gradient(to top,rgba(0, 238, 255, 0.753), rgb(255, 255, 255));
 }
+
+/* covid page */
+
+.covid {
+ background-image: linear-gradient(to top,rgba(0, 238, 255, 0.753), rgb(255, 255, 255));
+ text-align: center;
+    font-weight: bold;
+     font-family: 'Raleway', sans-serif;
+     color: black;
+}
+
+.covid-title {
+    text-align: center;
+    font-weight: bold;
+     font-family: 'Raleway', sans-serif;
+     color: black;
+     padding-top: 50px;
+     padding-bottom: 50px;
+}
+
+.video-title {
+    padding-top: 20px;
+     padding-bottom: 20px;
+     font-size: 30px;
+}
+
+.bottom-padding {
+padding-bottom: 50px;
+}
+
+a { color: inherit; } 
