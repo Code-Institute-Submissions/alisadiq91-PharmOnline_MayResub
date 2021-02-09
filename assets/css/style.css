@@ -3,9 +3,10 @@
 header {
 
     text-align: center;
-    height: 220px;
+    
     border-bottom: solid 2px navy;
     background: linear-gradient(to bottom ,rgb(255, 255, 255), rgba(0, 238, 255, 0.753));
+    padding-bottom: 30px;
 }
 
 
@@ -62,7 +63,6 @@ header {
 
 footer {
     text-align: center;
-    height: 150px;
     background: linear-gradient(to top,rgb(255, 255, 255), rgba(0, 238, 255, 0.753));
     border-top: 2px solid navy;
 }
@@ -265,10 +265,7 @@ text-align: center;
      
 }
 
-.branch-item {
-    margin-left: 100px;
-    margin-right: 100px;
-}
+
 
 .findus-page {
     background-image: linear-gradient(to top,rgba(0, 238, 255, 0.753), rgb(255, 255, 255));
@@ -304,3 +301,49 @@ padding-bottom: 50px;
 }
 
 a { color: inherit; } 
+
+
+/* mobile media query page */
+@media screen and (max-width: 600px){
+
+    .nhs-service {
+        margin-top: 15px;
+    }
+
+    .main-list-item {
+        font-size:10px;
+    }
+
+
+    .fa-clipboard-check {
+    font-size: 10px;
+    
+}
+
+.steps-image{
+    background-size: contain;
+}
+
+.header-list{
+    margin-bottom: 20px;
+}
+
+.steps-individual {
+   
+  
+    padding: 0px;
+    
+}
+
+.branch-item {
+    padding-bottom: 30px;
+}
+
+ul .steps {
+    padding-left: 0;
+}
+
+.covid-video iframe {
+    width: 90%;
+}
+}
