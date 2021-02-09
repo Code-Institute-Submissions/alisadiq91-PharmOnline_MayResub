@@ -124,7 +124,7 @@ color: rgba(0, 79, 182, 0.603);
 
 .main-list-item { 
  padding-top: 20px;
-    font-size: 15px;
+    font-size: 25px;
     color: navy;
     font-style: italic;
     font-weight: bold;
@@ -168,7 +168,7 @@ border-top: 5px solid navy;
 }
 
 .steps-individual {
-    border: 3px ridge navy;
+   
     margin-bottom: 30px;
     color: navy;
     font-family: 'Raleway', sans-serif;
@@ -294,8 +294,8 @@ text-align: center;
 }
 
 .video-title {
-    padding-top: 20px;
-     padding-bottom: 20px;
+    padding-top: 50px;
+     padding-bottom: 50px;
      font-size: 30px;
 }
 
