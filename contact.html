@@ -6,12 +6,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-  
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
-      <script type="text/javascript" src="assets/js/function.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_VTMnEhRsonpEtDwJFs1O2");
+})();
+</script>
     <title>PharmOnline</title>
        
 
@@ -26,7 +32,8 @@
     <div class="row">  
     <h1 class="logo-position col-12"><a class="logo" href="index.html"><i class="fas fa-laptop-medical"></i>  PharmOnline</a></h1>
     <img class="nhs-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/NHS-Logo.svg/371px-NHS-Logo.svg.png" alt="nhslogo" width="100" height="45">
- 
+    
+   
 <ul class=" col-12">
 <li class="header-list list-inline-item"><a class="header-link" href="findus.html"><i class="fas fa-search-location"></i>    &nbsp;Find Us</a></li>
 <li class="header-list list-inline-item"><a class="header-link" href="covid.html"><i class="fas fa-virus"></i>    &nbsp;Covid-19</a></li>
@@ -34,25 +41,33 @@
 <li class="header-list list-inline-item"><a class="header-link" href="contact.html"><i class="far fa-envelope"></i>    &nbsp;Contact Us</a></li>
 </ul></div>  </div>
 </header>
-<section class="findus-page">
-<h1 class="findus-title">Where to find us?</h1>
-<div class="container-fluid">
-    <div class="row justify-content-center">
-        <div class="col-6-lg col-12-m col-sm-12">
-            <div id="map"></div>
-        </div>
-    </div>
-</div>
-<h2 class="branches-title">Find us at our 4 branches accross the UK!</h2>
 
-<div class="container-fluid">
-<ul class="branches-list row">
-    <li class="list-inline-item branch-item col-lg-3 col-md-12 col-sm-12"><h3>Leeds</h3><h6>Woodhouse<br>Leeds<br>LS2 9JT<br>0113 2768943</h6></li>
-    <li class="list-inline-item branch-item col-lg-3 col-md-12 col-sm-12"><h3>York</h3><h6>Heslington<br>York<br>YO10 5DD<br>01904 765234</h6></li>
-    <li class="list-inline-item branch-item col-lg-3 col-md-12 col-sm-12"><h3>Bradford</h3><h6>Richmond Rd<br>Bradford<br>BD7 1DP<br>01274 567934</h6></li>
-    <li class="list-inline-item branch-item col-lg-3 col-md-12 col-sm-12"><h3>Manchester</h3><h6>Oxford Rd<br>Manchester<br>M13 9PL<br>0161 673456</h6></li>
-</ul></div>
-</section>
+<form class = "contact-us-form">
+<h1 class="contact-title">Contact Us</h1>
+    <div class="row justify-content-center">
+        <div class="mb-3 col-8">
+            <label for="fromName" class="form-label">Full Name</label>
+            <input type = "text" class="form-control" id = "fromName" placeholder="Enter your Name" required>
+        </div>
+        <div class="mb-3 col-8">
+            <label for="fromEmail" class="form-label">Email Address</label>
+            <input type = "email" class="form-control" id = "fromEmail" placeholder="Enter your Email" required>
+        </div>
+        <div class="mb-3 col-8">
+            <label for="message" class="form-label">What would you like to tell us?</label>
+            <textarea class="form-control" id="message" placeholder="Enter your message" rows="3" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary col-5" onclick="sendEmail(); showAlert(); clearInput();">Send Query!</button>
+        
+    </div>
+</form>
+
+
+
+
+
+
 <footer>
 <div class="container-fluid">
 <div class="row">
@@ -64,12 +79,11 @@
 
 <div class="download-footer col-lg-4 col-md-12 col-sm-12">
     <h4 class="footer-title">Download Our App</h4>
-    
+   
         <ul class="downloads-list">
             <li class="list-inline-item"><a class="footer-link" href="https://www.apple.com/uk/app-store/" target="_blank"><i class="fab fa-apple"></i></a></li>
             <li class="list-inline-item"><a class="footer-link" href="https://play.google.com/store/apps?utm_source=emea_Med&utm_medium=hasem&utm_content=Apr2815&utm_campaign=Evergreen&pcampaignid=MKT-EG-emea-gb-1001280-Med-hasem-ap-Evergreen-Apr2815-1%7cONSEM_kwid_43700049312677161&gclid=CjwKCAiAr6-ABhAfEiwADO4sfV-ZQD80ml7hKyi8jU228sZVqpblsavMxfpFOOY_fswnqNzz5wS-dRoC4eoQAvD_BwE&gclsrc=aw.ds" target="_blank"><i class="fab fa-google-play"></i></a></li> 
         </ul>
-    
 </div>
 
 <div class="socials-footer col-lg-4 col-md-12 col-sm-12">
@@ -91,13 +105,9 @@
 
 
 
+
 </footer>
-
-
- <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG22UUeYsPcbYzC-9GFkXMUdJZFOzb8Co&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
-
+  <script type="text/javascript" src="assets/js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>
