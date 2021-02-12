@@ -87,3 +87,29 @@
         
     });
   });
+
+
+  
+ function showAlert(){
+      alert("Thank you for contacting us!\nWe aim to reply to all queries within 2 working days.");
+  };
+
+  function sendEmail() {
+      let contactForm ={
+          from_name: document.getElementById("fromName").value,
+          from_email: document.getElementById("fromEmail").value,
+          message: document.getElementById("message").value,
+
+
+      };
+
+
+
+      emailjs.send("service_liljt1y","template_e2wnhxl",contactForm)
+      .then(function(response){
+          console.log("success", response.status)
+      })
+
+  };
+
+ 

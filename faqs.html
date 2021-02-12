@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script type="text/javascript" src="assets/js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
-    
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_VTMnEhRsonpEtDwJFs1O2");
+})();
+</script>
     <title>PharmOnline</title>
        
 
@@ -35,7 +41,7 @@
 </ul></div>  </div>
 </header>
 
-<section class="faqs">
+<section class="faqs-contact">
     <div class="faqs-title">Frequently Asked Questions</div>
 <div class="container">
     <div>
@@ -75,7 +81,24 @@
 </div>
 
 
-
+<form class = "contact-us-form">
+    <h1 class="contact-title">Contact Us</h1>
+    <div class="row justify-content-center">
+    <div class="mb-3 col-8">
+<label for="fromName" class="form-label">Full Name</label>
+<input type = "name" class="form-control" id = "fromName" placeholder="Enter your Name" required>
+</div>
+<div class="mb-3 col-8">
+<label for="fromEmail" class="form-label">Email Address</label>
+<input type = "email" class="form-control" id = "fromEmail" placeholder="Enter your Email" required>
+</div>
+<div class="mb-3 col-8">
+<label for="message" class="form-label">What would you like to tell us?</label>
+<textarea class="form-control" id="message" placeholder="Enter your message" rows="3" required></textarea>
+</div>
+<button type="button" class="btn btn-primary col-5" onclick="sendEmail(); showAlert();">Send Query!</button>
+</div>
+</form>
 </section>
 
 
@@ -115,6 +138,7 @@
 
 
 </div>
+
 
 
 

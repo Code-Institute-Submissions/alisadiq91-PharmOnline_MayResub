@@ -195,7 +195,7 @@ border-top: 5px solid navy;
 
 /* FAQs page */
 
-.faqs {
+.faqs-contact {
     padding-top: 50px;
     padding-bottom: 50px;
     background-image: linear-gradient(to top,rgba(0, 238, 255, 0.753), rgb(255, 255, 255));
@@ -211,7 +211,7 @@ border-top: 5px solid navy;
 }
 
 .question {
-    font-size: 25px;
+    font-size: 20px;
     color: black;
      font-family: 'Raleway', sans-serif;
      border-bottom: solid 2px rgba(3, 3, 3, 0.473);
@@ -232,6 +232,26 @@ border-top: 5px solid navy;
     padding-bottom: 15px;
 }
 
+/* contact us form */
+.contact-us-form{
+
+font-family: 'Raleway', sans-serif;
+font-weight: bold;
+}
+
+.contact-title {
+   font-family: 'Raleway', sans-serif;
+   padding-bottom: 20px; 
+   padding-top: 30px;
+   font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.form-label {
+    font-size: 20px;
+}
+
 /* Find us page */
 
 #map {
@@ -247,6 +267,7 @@ border-top: 5px solid navy;
      font-family: 'Raleway', sans-serif;
      color: black;
      font-weight: bold;
+     font-size: 30px;
 }
 
 .branches-title {
@@ -255,15 +276,21 @@ border-top: 5px solid navy;
      font-family: 'Raleway', sans-serif;
      color: black;
      font-weight: bold;
+     font-size: 30px;
 }
 
 .branches-list {
 text-align: center;
+padding-left: 0;
     padding-bottom: 50px;
      font-family: 'Raleway', sans-serif;
      color: black;
      margin: 0;
      
+}
+
+.branch-item {
+    margin-left: 50px;
 }
 
 
@@ -288,13 +315,13 @@ text-align: center;
      font-family: 'Raleway', sans-serif;
      color: black;
      padding-top: 50px;
-     padding-bottom: 50px;
+     font-size: 30px;
 }
 
 .video-title {
     padding-top: 50px;
      padding-bottom: 50px;
-     font-size: 30px;
+     font-size: 20px;
 }
 
 .bottom-padding {
@@ -307,17 +334,24 @@ a { color: inherit; }
 /* mobile media query page */
 @media screen and (max-width: 600px){
 
+    .nhs-logo {
+        display: none;
+    }
+    .logo {
+        font-size: 50px;
+    }
     .nhs-service {
         margin-top: 15px;
     }
 
     .main-list-item {
-        font-size:10px;
+        font-size:20px;
+
     }
 
 
     .fa-clipboard-check {
-    font-size: 10px;
+    font-size: 20px;
     
 }
 
@@ -353,4 +387,66 @@ a { color: inherit; }
 .branches-list {
     padding-left: 0;
 }
+
+.branch-item {
+    margin-left: 0px;
+}
+}
+
+@media screen and (max-width: 700px){
+
+    .nhs-logo {
+        display: none;
+    }
+
+    .nhs-service {
+        margin-top: 15px;
+    }
+
+    .branch-item {
+    padding-bottom: 30px;
+}
+.branches-list {
+    padding-left: 0;
+}
+
+.branch-item {
+    margin-left: 0px;
+}
+}
+
+@media screen and (max-width: 800px){
+
+    .nhs-logo {
+        display: none;
+    }
+
+    .nhs-service {
+        margin-top: 15px;
+    }
+
+    .branch-item {
+    padding-bottom: 30px;
+}
+.branches-list {
+    padding-left: 0;
+}
+
+.branch-item {
+    margin-left: 0px;
+}
+}
+
+@media screen and (max-width: 1050px){
+    .main-list-item {
+        font-size:20px;
+
+    }
+
+
+    .fa-clipboard-check {
+    font-size: 20px;
+    }
+
+
 }
