@@ -1,11 +1,14 @@
 /* header */
+body {
 
+background: whitesmoke;
+}
 header {
 
     text-align: center;
     
     border-bottom: solid 2px navy;
-    background: linear-gradient(to bottom ,rgb(255, 255, 255), rgba(0, 238, 255, 0.753));
+    
     padding-bottom: 30px;
 }
 
@@ -63,7 +66,7 @@ header {
 
 footer {
     text-align: center;
-    background: linear-gradient(to top,rgb(255, 255, 255), rgba(0, 238, 255, 0.753));
+  
     border-top: 2px solid navy;
 }
 
@@ -154,7 +157,7 @@ color: rgba(0, 79, 182, 0.603);
 }
 
 .steps-section {
-background-image: linear-gradient(to top,rgba(0, 238, 255, 0.753), rgb(255, 255, 255));
+
 border-top: 5px solid navy;
 }
 
@@ -198,7 +201,7 @@ border-top: 5px solid navy;
 .faqs-contact {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: linear-gradient(to top,rgba(0, 238, 255, 0.753), rgb(255, 255, 255));
+    
 }
 
 .faqs-title {
@@ -301,14 +304,12 @@ padding-left: 0;
 
 
 
-.findus-page {
-    background-image: linear-gradient(to top,rgba(0, 238, 255, 0.753), rgb(255, 255, 255));
-}
+
 
 /* covid page */
 
 .covid {
- background-image: linear-gradient(to top,rgba(0, 238, 255, 0.753), rgb(255, 255, 255));
+
  text-align: center;
     font-weight: bold;
      font-family: 'Raleway', sans-serif;
