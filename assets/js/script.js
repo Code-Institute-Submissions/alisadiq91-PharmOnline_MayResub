@@ -1,3 +1,5 @@
+ //steps section mouseover 
+ 
  $(document).ready(function () {
     $(".hover-me-1").mouseover(function () {
       $("p.show-me-1").show();
@@ -59,6 +61,7 @@
     });
   });
 
+//faqs section toggle
 
   var action = 'click';
   var speed = "500";
@@ -88,11 +91,13 @@
     });
   });
 
-
+//alert for contact us form submission 
 
  function showAlert(){
       alert("Thank you for contacting us!\nWe aim to reply to all queries within 2 working days.");
   };
+
+//emailJS contact us form
 
   function sendEmail() {
       let contactForm ={

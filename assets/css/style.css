@@ -276,6 +276,14 @@ padding-bottom: 50px;
     font-size: 20px;
 }
 
+textarea {
+  resize: none;
+}
+
+.contact-us-margin {
+    margin: 0;
+}
+
 
 
 /* Find us page */
@@ -378,11 +386,15 @@ a { color: inherit; }
         margin-top: 15px;
     }
 
-    .main-list-item {
+    .main-list.item {
         font-size:15px;
 
     }
 
+    .dl-link{
+    padding-top: 15px;
+    margin-left: 60px;
+}
 
     .fa-clipboard-check {
     font-size: 20px;
@@ -425,6 +437,7 @@ a { color: inherit; }
 .branch-item {
     margin-left: 0px;
 }
+
 }
 
 @media screen and (max-width: 700px){
@@ -452,6 +465,8 @@ a { color: inherit; }
         font-size:15px;
 
     }
+
+
 }
 
 @media screen and (max-width: 800px){
@@ -479,6 +494,8 @@ a { color: inherit; }
         font-size:15px;
 
     }
+
+  
 }
 
 @media screen and (max-width: 1050px){
@@ -496,5 +513,7 @@ a { color: inherit; }
         font-size:15px;
 
     }
+
+  
 
 }
