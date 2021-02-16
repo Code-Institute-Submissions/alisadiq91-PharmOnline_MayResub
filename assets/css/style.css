@@ -379,7 +379,7 @@ a { color: inherit; }
     }
 
     .main-list-item {
-        font-size:20px;
+        font-size:15px;
 
     }
 
@@ -447,6 +447,11 @@ a { color: inherit; }
 .branch-item {
     margin-left: 0px;
 }
+
+ .main-list-item {
+        font-size:15px;
+
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -469,6 +474,11 @@ a { color: inherit; }
 .branch-item {
     margin-left: 0px;
 }
+
+ .main-list-item {
+        font-size:15px;
+
+    }
 }
 
 @media screen and (max-width: 1050px){
@@ -482,5 +492,9 @@ a { color: inherit; }
     font-size: 20px;
     }
 
+     .main-list-item {
+        font-size:15px;
+
+    }
 
 }
