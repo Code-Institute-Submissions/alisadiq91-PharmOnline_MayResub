@@ -99,21 +99,32 @@
 
 //emailJS contact us form
 
-  function sendEmail() {
-      let contactForm ={
-          from_name: document.getElementById("fromName").value,
-          from_email: document.getElementById("fromEmail").value,
-          message: document.getElementById("message").value,
-
-
-      };
-
-
-
-      emailjs.send("service_liljt1y","template_e2wnhxl",contactForm)
-      .then(function(response){
-          console.log("success", response.status)
-      })
-
-  };
-
+​
+function sendEmail() {
+	  
+	  const name = document.getElementById("fromName").value;
+	  const email = document.getElementById("fromEmail").value;
+	  const message = document.getElementById("message").value;
+	  if (name.length > 0){
+		if (email.length > 0){
+		  if (message.length > 0){
+				 let contactForm ={
+					  from_name: name,
+					  from_email: email,
+					  message: message,
+				  };
+​
+				  emailjs.send("service_liljt1y","template_e2wnhxl",contactForm)
+				  .then(function(response){
+					  console.log("success", response.status);
+					  showAlert(); 
+					  document.getElementById("fromName").value = '';
+					  document.getElementById("fromEmail").value = '';
+					  document.getElementById("message").value = '';
+				  })
+				
+			}
+			 
+		}
+	  }
+  }

@@ -6,18 +6,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript" src="assets/js/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- 
+   
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
+
        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script type="text/javascript">
-(function() {
-emailjs.init("user_VTMnEhRsonpEtDwJFs1O2");
-})();
-</script>
+
     <title>PharmOnline</title>
        
 
@@ -42,7 +38,7 @@ emailjs.init("user_VTMnEhRsonpEtDwJFs1O2");
 </ul></div>  </div>
 </header>
 
-<form class = "contact-us-form">
+<form class = "contact-us-form" onsubmit="event.preventDefault(); sendEmail();">
 <h1 class="contact-title">Contact Us</h1>
     <div class="contact-us-margin row justify-content-center">
         <div class="mb-3 col-lg-8 col-sm-12 col-md-12">
@@ -58,7 +54,7 @@ emailjs.init("user_VTMnEhRsonpEtDwJFs1O2");
             <textarea class="form-control" id="message" placeholder="Enter your message" rows="3" required></textarea>
         </div>
         
-        <button type="submit" class="btn btn-primary col-5" onclick="sendEmail(); showAlert(); clearInput();">Send Query!</button>
+        <button type="submit" class="btn btn-primary col-5">Send Query!</button>
         
     </div>
 </form>
@@ -107,7 +103,14 @@ emailjs.init("user_VTMnEhRsonpEtDwJFs1O2");
 
 
 </footer>
-  <script type="text/javascript" src="assets/js/script.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+<script type="text/javascript">
+(function() {
+emailjs.init("user_VTMnEhRsonpEtDwJFs1O2");
+})();
+</script> 
+
+<script type="text/javascript" src="assets/js/script.js"></script> 
+
 </body>
 </html>
