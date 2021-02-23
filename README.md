@@ -230,7 +230,7 @@ Features
 
 6.	Once submitted, the fields automatically reset. 
 
-7.	I used Javascript to use emailJs so that any questions or messages submitted can be seen by the company on their email address. This is currently set up to my email address. The message is shown in the format below:
+7.	I used Javascript to use emailJs so that any questions or messages submitted can be seen by the company on their email address. This is currently set up to my email address. I have also set the email template to send a copy of the email to the sender so anyone using the form can be sure it has sent. The message is shown in the format below:
 
 ![email-example](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/emailJS.png)
 

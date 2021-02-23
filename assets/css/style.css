@@ -440,6 +440,7 @@ a { color: inherit; }
 .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
     
     margin-left: 50%;
+     height: 245px;
 }
 }
 
