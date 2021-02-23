@@ -437,7 +437,10 @@ a { color: inherit; }
 .branch-item {
     margin-left: 0px;
 }
-
+.show-me-1, .show-me-2, .show-me-3, .show-me-4 {
+    
+    margin-left: 50%;
+}
 }
 
 @media screen and (max-width: 700px){
@@ -465,7 +468,10 @@ a { color: inherit; }
         font-size:15px;
 
     }
-
+.show-me-1, .show-me-2, .show-me-3, .show-me-4 {
+    
+    margin-left: 50%;
+}
 
 }
 
@@ -495,7 +501,10 @@ a { color: inherit; }
 
     }
 
-  
+  .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
+    
+    margin-left: 0;
+}
 }
 
 @media screen and (max-width: 1050px){
@@ -514,6 +523,9 @@ a { color: inherit; }
 
     }
 
-  
+  .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
+    
+    margin-left: 80px;
+}
 
 }
