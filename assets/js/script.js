@@ -95,16 +95,15 @@
 
  function showAlert(){
       alert("Thank you for contacting us!\nWe aim to reply to all queries within 2 working days.");
-  };
+  }
 
 
-  
+
 //emailJS contact us form
 
-​
 function sendEmail() {
-	  
-	  const name = document.getElementById("fromName").value;
+
+    const name = document.getElementById("fromName").value;
 	  const email = document.getElementById("fromEmail").value;
 	  const message = document.getElementById("message").value;
 	  if (name.length > 0){
@@ -115,8 +114,8 @@ function sendEmail() {
 					  from_email: email,
 					  message: message,
 				  };
-​
-				  emailjs.send("service_liljt1y","template_e2wnhxl",contactForm)
+
+                  emailjs.send("service_liljt1y","template_e2wnhxl",contactForm)
 				  .then(function(response){
 					  console.log("success", response.status);
 					  showAlert(); 
@@ -124,9 +123,8 @@ function sendEmail() {
 					  document.getElementById("fromEmail").value = '';
 					  document.getElementById("message").value = '';
 				  })
-				
-			}
-			 
-		}
+}
+
+}
 	  }
-  }
+  };
