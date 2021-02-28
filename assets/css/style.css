@@ -42,12 +42,23 @@ header {
     padding:0;
 }
 
+.header-padding {
+    padding-left: 0;
+}
 
 .header-link:hover {
     color: rgb(0, 79, 182);
     text-decoration: none;
      }
 
+     .header-icon {
+     padding-bottom: 10px;
+     padding-top: 20px;
+ }
+
+ .header-list{
+     padding-bottom: 20px;
+ }
 .nhs-logo {
     position: absolute;
     margin-top: 15px;
@@ -443,6 +454,10 @@ a { color: inherit; }
     margin-left: 50%;
      height: 245px;
 }
+
+.header-icon {
+     display: none;
+ }
 }
 
 @media screen and (max-width: 700px){
@@ -474,7 +489,9 @@ a { color: inherit; }
     
     margin-left: 50%;
 }
-
+.header-icon {
+     display: none;
+ }
 }
 
 @media screen and (max-width: 800px){
@@ -507,6 +524,9 @@ a { color: inherit; }
     
     margin-left: 0;
 }
+.header-icon {
+     display: none;
+ }
 }
 
 @media screen and (max-width: 1050px){
@@ -529,5 +549,7 @@ a { color: inherit; }
     
     margin-left: 80px;
 }
-
+.header-icon {
+     display: none;
+ }
 }
