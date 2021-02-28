@@ -35,10 +35,11 @@ header {
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
     color: navy;
-    margin-left: 50px;
-    margin-right: 50px;
     font-weight: bold;
-    
+}
+
+.header-list {
+    padding:0;
 }
 
 
@@ -124,7 +125,7 @@ color:  rgb(0, 79, 182);
 }
 .main-list {
     font-family: 'Raleway', sans-serif;
-    padding-top: 90px;
+    padding-top: 150px;
     list-style-type: none;
     font-weight: bold;
  
@@ -145,8 +146,8 @@ color:  rgb(0, 79, 182);
 }
 
 .dl-link{
-    padding-top: 15px;
-    margin-left: 50px;
+    padding-top: 40px;
+    margin-left: 120px;
 }
 
 .nhs-service {

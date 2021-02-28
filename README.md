@@ -2,7 +2,7 @@
 
 Ali Sadiq MS2 – Pharm Online
 
-View the live project here.
+{View the live project here.}(https://alisadiq91.github.io/PharmOnline/index.html)
 
 This is the second project of my software development career. I have decided to create a website for a chain of pharmacies that have decided to delve into the world of online pharmacy. The company name has changed to PharmOnline because of this. I will be using what I have learnt from my recent modules covering Javascript and Jquery, as well as how to include an API in a website. I will also use HTML, CSS and the bootstrap framework. I am attempting to show a vast range of what I have learnt, including emailJS, incorporating APIs and using Javascript to monitor how a user interacts with the website. 
 The website is for the company Pharm Online. They are an online Pharmacy which also have 4 stores across the UK.  They currently have a site in Leeds, Bradford, York and Manchester, which each offer a range of services. They also have a mobile app which is used for online ordering of medication. 
