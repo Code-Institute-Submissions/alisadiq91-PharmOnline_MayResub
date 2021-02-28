@@ -143,9 +143,9 @@ color:  rgb(0, 79, 182);
     padding-top: 150px;
     list-style-type: none;
     font-weight: bold;
- 
-   
+    
 }
+
 .fa-clipboard-check {
     font-size: 30px;
     color: navy;
@@ -342,7 +342,7 @@ padding-left: 0;
      font-family: 'Raleway', sans-serif;
      color: black;
      margin: 0;
-     
+   
 }
 
 .list-inline-item:not(:last-child) {
@@ -351,6 +351,7 @@ padding-left: 0;
 .branch-item {
     margin: 0;
     font-weight: bold;
+    
 }
 
 
@@ -408,8 +409,12 @@ a { color: inherit; }
         margin-top: 15px;
     }
 
+    .main-list {
+        padding-left: 0;
+    }
     .main-list.item {
         font-size:15px;
+        text-align: center;
 
     }
 
@@ -516,7 +521,7 @@ a { color: inherit; }
     header {
         padding-bottom: 0;
     }
-    
+
     .nhs-logo {
         display: none;
     }
@@ -535,6 +540,8 @@ a { color: inherit; }
 .branch-item {
     margin-left: 0px;
 }
+
+
 
  .main-list-item {
         font-size:15px;
