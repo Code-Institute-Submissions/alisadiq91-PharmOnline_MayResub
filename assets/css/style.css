@@ -118,6 +118,10 @@ footer {
 color:  rgb(0, 79, 182);
 }
 
+.tel-position {
+    padding-top: 5px;
+}
+
 .footer-link {
     margin-right: .5rem;
     margin-left: .5rem;
@@ -549,7 +553,5 @@ a { color: inherit; }
     
     margin-left: 80px;
 }
-.header-icon {
-     display: none;
- }
+
 }
