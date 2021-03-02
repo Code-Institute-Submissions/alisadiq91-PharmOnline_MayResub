@@ -419,7 +419,8 @@ a { color: inherit; }
 
   .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
     
-    margin-left: 80px;
+    margin-left: 10%;
+    width: 100%;
 }
 
 @media screen and (max-width: 850px) and (min-width: 701px){
@@ -453,7 +454,7 @@ a { color: inherit; }
 }
 .main-list-item {
         font-size:15px;
-padding-left: 150px;
+        padding-left: 150px;
     }
 
 .dl-link {
@@ -512,7 +513,7 @@ padding-left: 150px;
     }
 .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
     
-    margin-left: 50%;
+padding-left: 30px;
 }
 .header-icon {
      display: none;
@@ -523,7 +524,7 @@ padding-left: 150px;
 }
 
 .main-list {
-    padding-left: 300px;
+    padding-left: 20%;
 }
 }
 
