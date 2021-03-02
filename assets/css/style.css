@@ -219,7 +219,7 @@ border-top: 2px solid navy;
 .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
     display : none;
     width: 60%;
-    height: 235px;
+    height: 236px;
     vertical-align: center;
     padding-top: 30px;
     font-size: 20px;
@@ -471,6 +471,7 @@ padding-left: 150px;
  .header-list{
     margin-bottom: 20px;
 }
+
 }
 
 
@@ -520,6 +521,10 @@ padding-left: 150px;
  .header-list{
     margin-bottom: 20px;
 }
+
+.main-list {
+    padding-left: 300px;
+}
 }
 
 @media screen and (max-width: 600px){
@@ -549,7 +554,8 @@ padding-left: 150px;
     .main-list {
         padding-left: 0;
     }
-    .main-list.item {
+
+    .main-list-item {
         font-size:15px;
         text-align: center;
         padding-left: 0;
@@ -558,7 +564,7 @@ padding-left: 150px;
 
     .dl-link{
     padding-top: 15px;
-    margin-left: 70px;
+    margin-left: 50px;
 }
 
     .fa-clipboard-check {
@@ -575,9 +581,7 @@ padding-left: 150px;
 }
 
 .steps-individual {
-   
-  
-    padding: 0px;
+      padding: 0px;
     
 }
 
@@ -604,9 +608,13 @@ padding-left: 150px;
 }
 .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
     
-    margin-left: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
      height: 245px;
+     width: 100%;
 }
+
+
 
 .header-icon {
      display: none;
