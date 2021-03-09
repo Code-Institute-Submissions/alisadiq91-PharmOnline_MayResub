@@ -163,7 +163,7 @@ color:  rgb(0, 79, 182);
 
 .dl-link{
     padding-top: 40px;
-    margin-left: 120px;
+    margin-right: 130px;
 }
 
 .nhs-service {
@@ -408,7 +408,7 @@ a { color: inherit; }
     }
 
     .dl-link {
-        margin-left: 40px;
+margin-right: 0;
         padding-top: 20px;
     }
     .fa-clipboard-check {
@@ -457,9 +457,10 @@ a { color: inherit; }
         padding-left: 150px;
     }
 
-.dl-link {
-    padding-left: 200px;
-}
+.dl-link{
+    padding-top: 15px;
+    margin-right: 0;
+    }
 
   .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
     
@@ -511,6 +512,12 @@ a { color: inherit; }
         font-size:15px;
 
     }
+
+    .dl-link{
+    padding-top: 15px;
+    margin-right: 0;
+    }
+
 .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
     
 padding-left: 30px;
@@ -565,8 +572,8 @@ padding-left: 30px;
 
     .dl-link{
     padding-top: 15px;
-    margin-left: 50px;
-}
+    margin-right: 0;
+    }
 
     .fa-clipboard-check {
     font-size: 20px;
