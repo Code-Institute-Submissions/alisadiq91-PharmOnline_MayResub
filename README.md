@@ -444,6 +444,8 @@ Content
 
 All content was written by the coder apart form those listed below.
 
+FAQ page - I had help from this link writing the JQuery for my FAQ page. https://www.jqueryscript.net/accordion/Simple-Smooth-FAQ-Accordion-with-jQuery-CSS-FAQ-Slider.html
+
 Contact Form – I used the integration function on the email JS website to add a link to my profile. https://dashboard.emailjs.com/admin/integration/browser
 
 Media
