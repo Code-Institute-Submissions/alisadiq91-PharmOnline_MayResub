@@ -411,13 +411,13 @@ a { color: inherit; }
 
     .dl-link {
         margin-right: 0;
-        padding-top: 20px;
+        padding-top: 50px;
         padding-left: 0;
     }
 
        .dl-links-individual {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
     .fa-clipboard-check {
     font-size: 20px;
@@ -445,37 +445,39 @@ a { color: inherit; }
     .branch-item {
     padding-bottom: 30px;
 }
-.branches-list {
-    padding-left: 0;
+    .branches-list {
+        padding-left: 0;
 }
 
-.branch-item {
-    margin-left: 0px;
+    .branch-item {
+        margin-left: 0px;
 }
 
-.main-image{
-    padding-bottom: 30px;
+    .main-image{
+        padding-bottom: 30px;
 }
-.main-list-item {
+
+    .main-list-item {
         font-size:15px;
         padding-left: 150px;
-    }
-
-.dl-link{
-    padding-top: 15px;
-    margin-right: 0;
-    padding-left: 0;
-    }
-
-       .dl-links-individual {
-    padding-right: 0px;
-    padding-left: 0px;
 }
 
-  .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
+    .dl-link{
+        padding-top: 15px;
+        margin-right: 0;
+        padding-left: 0;
+}
+
+    .dl-links-individual {
+        padding-right: 0px;
+        padding-left: 0px;
+}
+
+    .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
     
-    margin-left: 0;
+        margin-left: 0;
 }
+
 .header-icon {
      display: none;
  }
