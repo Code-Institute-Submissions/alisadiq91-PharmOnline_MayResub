@@ -9,7 +9,7 @@ header {
     
     border-bottom: solid 2px navy;
     
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 
@@ -41,6 +41,7 @@ header {
 
 .header-list {
     padding:0;
+     padding-bottom: 20px;
 }
 
 .header-padding {
@@ -57,9 +58,7 @@ header {
      padding-top: 20px;
  }
 
- .header-list{
-     padding-bottom: 20px;
- }
+
 .nhs-logo {
     position: absolute;
     margin-top: 15px;
@@ -391,7 +390,7 @@ padding-bottom: 50px;
 a { color: inherit; } 
 
 
-/* mobile media query page */
+/* media queries */
 @media screen and (max-width: 1050px) and (min-width: 851px){
 
     .main-list-item {
@@ -410,6 +409,7 @@ a { color: inherit; }
     .dl-link {
 margin-right: 0;
         padding-top: 20px;
+        padding-left: 0;
     }
     .fa-clipboard-check {
     font-size: 20px;
@@ -460,6 +460,7 @@ margin-right: 0;
 .dl-link{
     padding-top: 15px;
     margin-right: 0;
+    padding-left: 0;
     }
 
   .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
@@ -516,6 +517,7 @@ margin-right: 0;
     .dl-link{
     padding-top: 15px;
     margin-right: 0;
+    padding-left: 0;
     }
 
 .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
@@ -565,7 +567,7 @@ padding-left: 30px;
 
     .main-list-item {
         font-size:15px;
-        text-align: center;
+        
         padding-left: 0;
 
     }
@@ -573,6 +575,7 @@ padding-left: 30px;
     .dl-link{
     padding-top: 15px;
     margin-right: 0;
+    padding-left: 0;
     }
 
     .fa-clipboard-check {
