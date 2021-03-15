@@ -224,7 +224,7 @@ border-top: 2px solid navy;
     display : none;
     height: 230px;
     vertical-align: center;
-    padding-top: 30px;
+    padding-top: 40px;
     font-size: medium;
     font-weight: bold;
 }
@@ -473,11 +473,6 @@ a { color: inherit; }
         padding-left: 0px;
 }
 
-    .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
-    
-        margin-left: 0;
-}
-
 .header-icon {
      display: none;
  }
@@ -536,10 +531,7 @@ a { color: inherit; }
     padding-left: 0px;
 }
 
-.show-me-1, .show-me-2, .show-me-3, .show-me-4 {
-    
-padding-left: 30px;
-}
+
 .header-icon {
      display: none;
  }
