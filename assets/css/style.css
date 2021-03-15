@@ -161,8 +161,12 @@ color:  rgb(0, 79, 182);
 }
 
 .dl-link{
-    padding-top: 40px;
-    margin-right: 130px;
+    padding-top: 50px;
+}
+
+.dl-links-individual {
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
 .nhs-service {
@@ -217,13 +221,11 @@ border-top: 2px solid navy;
 
 .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
     display : none;
-    width: 60%;
     height: 230px;
     vertical-align: center;
     padding-top: 30px;
-    font-size: 20px;
+    font-size: medium;
     font-weight: bold;
-    margin-left: 100px;
 }
 
 .step-title {
@@ -411,18 +413,18 @@ margin-right: 0;
         padding-top: 20px;
         padding-left: 0;
     }
+
+       .dl-links-individual {
+    padding-right: 0px;
+    padding-left: 0px;
+}
     .fa-clipboard-check {
     font-size: 20px;
     }
 
     
 
-  .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
-    
-    margin-left: 10%;
-    width: 100%;
-}
-
+  
 @media screen and (max-width: 850px) and (min-width: 701px){
 
 
@@ -462,6 +464,11 @@ margin-right: 0;
     margin-right: 0;
     padding-left: 0;
     }
+
+       .dl-links-individual {
+    padding-right: 0px;
+    padding-left: 0px;
+}
 
   .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
     
@@ -519,6 +526,11 @@ margin-right: 0;
     margin-right: 0;
     padding-left: 0;
     }
+
+       .dl-links-individual {
+    padding-right: 0px;
+    padding-left: 0px;
+}
 
 .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
     
@@ -578,6 +590,11 @@ padding-left: 30px;
     padding-left: 0;
     }
 
+    .dl-links-individual {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
     .fa-clipboard-check {
     font-size: 20px;
     
@@ -617,14 +634,6 @@ padding-left: 30px;
 .branch-item {
     margin-left: 0px;
 }
-.show-me-1, .show-me-2, .show-me-3, .show-me-4 {
-    
-    margin-left: 11%;
-    margin-right: 5px;
-     height: 245px;
-     width: 80%;
-}
-
 
 
 .header-icon {
