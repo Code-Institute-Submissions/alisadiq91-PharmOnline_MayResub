@@ -103,13 +103,13 @@
 
 function sendEmail() {
 
-    const name = document.getElementById("fromName").value;
-	  const email = document.getElementById("fromEmail").value;
-	  const message = document.getElementById("message").value;
+    var name = document.getElementById("fromName").value;
+	  var email = document.getElementById("fromEmail").value;
+	  var message = document.getElementById("message").value;
 	  if (name.length > 0){
 		if (email.length > 0){
 		  if (message.length > 0){
-				 let contactForm ={
+				 var contactForm ={
 					  from_name: name,
 					  from_email: email,
 					  message: message,
