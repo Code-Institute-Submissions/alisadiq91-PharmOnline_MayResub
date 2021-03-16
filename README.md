@@ -322,6 +322,15 @@ There were 2 errors but these were with the bootstrap model. The warnings were a
 
 ![css-validator](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/cssvalidator.png)
 
+JS errors 
+
+I used https://jshint.com/ to check my Javascript code for errors.
+
+There were no errors for either map.js or script.js
+
+![map.js](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-js.png)
+
+![script.js](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/script-js.png)
 
 
 Aim
@@ -449,6 +458,8 @@ All content was written by the coder apart form those listed below.
 FAQ page - I had help from this link writing the JQuery for my FAQ page. https://www.jqueryscript.net/accordion/Simple-Smooth-FAQ-Accordion-with-jQuery-CSS-FAQ-Slider.html
 
 Contact Form – I used the integration function on the email JS website to add a link to my profile. https://dashboard.emailjs.com/admin/integration/browser
+
+Find us page - My Tutor Antonio Rodriguez helped me to write the code to highlight each branch from the list when clicking the marker.
 
 Media
 

@@ -122,9 +122,9 @@ function sendEmail() {
 					  document.getElementById("fromName").value = '';
 					  document.getElementById("fromEmail").value = '';
 					  document.getElementById("message").value = '';
-				  })
+				  });
 }
 
 }
 	  }
-  };
+  }
