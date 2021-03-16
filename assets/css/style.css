@@ -321,11 +321,9 @@ textarea {
 }
 
 .pharmaselected{
-         background-image: linear-gradient(navy, rgb(111, 106, 179));
-  
-  
-  color: white;
-  
+       border: navy 1px solid;
+       color: navy;
+       background: rgba(128, 128, 128, 0.486);
 }
 
 .findus-title {

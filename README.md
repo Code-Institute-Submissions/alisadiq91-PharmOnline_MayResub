@@ -137,7 +137,7 @@ Features
 
 1.	Page title – A simple “where to find us?” to catch the eye of the user. 
 
-2.	Map – I used the google map API to incorporate a map and the location of the stores. This gives the user the chance to zoom in on each location and find out exactly where they are. Each location has been given a custom marker, an image universally used as health or pharmacy. When the user clicks the marker, a window pops up with the full address of the pharmacy. 
+2.	Map – I used the google map API to incorporate a map and the location of the stores. This gives the user the chance to zoom in on each location and find out exactly where they are. Each location has been given a custom marker, an image universally used as health or pharmacy. When the user clicks the marker, a window pops up with the name of the pharmacy. 
 
 3.	When each marker on the map is clicked. The branch is highlighted below to show the user which branch they have clicked on. When each marker is clicked, it only highlights the branch the user has clicked, even after a different branch is clicked.
 
