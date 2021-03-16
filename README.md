@@ -139,11 +139,13 @@ Features
 
 2.	Map – I used the google map API to incorporate a map and the location of the stores. This gives the user the chance to zoom in on each location and find out exactly where they are. Each location has been given a custom marker, an image universally used as health or pharmacy. When the user clicks the marker, a window pops up with the full address of the pharmacy. 
 
+3.	When each marker on the map is clicked. The branch is highlighted below to show the user which branch they have clicked on. When each marker is clicked, it only highlights the branch the user has clicked, even after a different branch is clicked.
+
 ![map-popup-window](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-popup.png)
 
-3.	List of branches – Underneath the map is a list of the 4 branches in the UK. If the user wants to quickly see the locations without using the map. 
+4. List of branches – Underneath the map is a list of the 4 branches in the UK. If the user wants to quickly see the locations without using the map. 
 
-4.	In mobile view - the branches are each on their own line
+5. In mobile view - the branches are each on their own line
 
 
 Covid19 page – languages used – HTML, CSS, font awesome 

@@ -320,6 +320,14 @@ textarea {
     color: navy;
 }
 
+.pharmaselected{
+         background-image: linear-gradient(navy, rgb(111, 106, 179));
+  
+  
+  color: white;
+  
+}
+
 .findus-title {
     text-align: center;
     padding-top: 50px;
