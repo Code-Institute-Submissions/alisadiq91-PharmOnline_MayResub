@@ -335,6 +335,15 @@ textarea {
      font-size: 30px;
 }
 
+.findus-title + h4 {
+   text-align: center;
+    padding-top: 5px;
+     font-family: 'Raleway', sans-serif;
+     color: black;
+     font-weight: bold;
+     font-size: 13px; 
+}
+
 .branches-title {
     text-align: center;
     margin-bottom: 40px;
@@ -361,6 +370,14 @@ padding-left: 0;
     margin: 0;
     font-weight: bold;
     
+}
+
+#york, #bradford, #manchester, #london, #sheffield, #birmingham, #newcastle, #liverpool, #nottingham {
+    display: none;
+}
+
+#searchBox, #otherBox, #dateService, #dateMedication {
+    display: none;
 }
 
 
