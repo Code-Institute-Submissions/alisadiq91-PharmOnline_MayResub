@@ -52,119 +52,57 @@
 <h2 class="branches-title">Find us at our 10 branches accross the UK!</h2>
 
 <div class="container-fluid">
-<div class="branches-list row" id="leeds">
-    <div class="branch-item col-lg-6 col-md-12 col-sm-12"><h3>Leeds</h3><h6>Woodhouse<br>LS2 9JT<br><a class="tel"  href="tel:01132768943">0113 2768943</a><br>Open 8am-6pm Mon-Fri</h6></div>
-    <div class="branch-item col-lg-6 col-md-12 col-sm-12">
-        <form>
-            <div class="form-group">
-                <label for="service_required">Which service do you require?</label>
-                <select class="form-control" id="FormControlSelect" onchange="myOptions(this)">
-                    <option value="" disabled selected>Select your option</option>
-                    <option value="covid" id="covid">Covid Testing</option>
-                    <option value="orderMeds" id="order_meds">Order Medication</option>
-                    <option value="travel" id="travel">Travel Vaccinations</option>
-                    <option value="bloodTest" id="blood_test">Blood test for vitamins</option>
-                    <option value="bpCheck" id="bp_check">Blood Pressure Check</option>
-                    <option value="other" id="other">Other</option>
-                </select>
-            </div>
-            <script>
-function myOptions(optionSelect)
-{
-    if(optionSelect){
-        optionValue = optionSelect.value;
-        if(optionValue == "covid"){
-            document.getElementById("dateService").style.display = "block";
-        }
-        else if(optionValue == "travel"){
-            document.getElementById("dateService").style.display = "block";
-                }
-        else if(optionValue == "blood_test"){
-            document.getElementById("dateService").style.display = "block";
-                }
-        else if(optionValue == "bp_check"){
-            document.getElementById("dateService").style.display = "block";
-                }
-        else if(optionValue == "other"){
-            document.getElementById("otherBox").style.display = "block";
-                }
-        else if(optionValue == "orderMeds"){
-            document.querySelector("#dateMedication").style.display = "block";
-            document.querySelector("#searchBox").style.display = "block";
-                }
-       
-}}
+    <div class="branches-list row">
+        <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="leeds"><h3>Leeds</h3><h6>Woodhouse<br>LS2 9JT<br><a class="tel"  href="tel:01132768943">0113 2768943</a><br>Open 8am-6pm Mon-Fri</h6></div>
+            <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="york"><h3>York</h3><h6>Heslington<br>YO10 5DD<br><a class="tel"  href="tel:01904765234">01904 765234</a><br>Open 8am-6pm Mon-Fri</h6></div>
+            <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="bradford"><h3>Bradford</h3><h6>Richmond Rd<br>BD7 1DP<br><a class="tel"  href="tel:01274567934">01274 567934</a><br>Open 8am-6pm Mon-Fri</h6></div>
+            <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="manchester"><h3>Manchester</h3><h6>Oxford Rd<br>M13 9PL<br><a class="tel"  href="tel:0161673456">0161 673456</a><br>Open 7am-11pm Mon-Sun</h6></div>
+            <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="london"><h3>London</h3><h6>Brunswick Square<br>WC1N 1AX<br><a class="tel"  href="tel:02077535800">0207 7535800</a><br>Open 8am-11pm Mon-Sun</h6></div>
+            <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="sheffield"><h3>Sheffield</h3><h6>Weston Road<br>S10 2TN<br><a class="tel"  href="tel: 01142222000"> 0114 2222000</a><br>Open 6am-10pm Mon-Sat</h6></div>
+            <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="birmingham"><h3>Birmingham</h3><h6>Green Lane<br>B14 7JG<br><a class="tel"  href="tel:01214143344">0121 4143344</a><br>Open 9am-6pm Mon-Fri</h6></div>
+            <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="newcastle"><h3>Newcastle</h3><h6>Tyne Avenue<br>NE1 7RU<br><a class="tel"  href="tel:01912086000">0191 2086000</a><br>Open 8am-5pm Mon-Fri</h6></div>
+            <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="liverpool"><h3>Liverpool</h3><h6>Brownlow Road<br>L69 3BX<br><a class="tel"  href="tel:01517942000">0151 7942000</a><br>Open 8am-8pm Mon-Sat</h6></div>
+            <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="nottingham"><h3>Nottingham</h3><h6>East Drive<br>NG7 2RD<br><a class="tel"  href="tel:01159515151">0115 9515151</a><br>Open 7am-7pm Mon-Sat</h6></div>
 
-</script>
-            <div class="form-group" id="dateService">
-                <label for="start">When would you like us to book you an appointment?</label><br>
-                <input type="date" id="start" name="trip-start" min="" max="">      
-            </div>
-            <div class="form-group" id="dateMedication">
-                <label for="start">When would you to pick up your medication?</label><br>
-                <input type="date" name="trip-start" min="" max="">   
-            </div>
-            <div class="form-group" id="searchBox">
-             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </div>
-            <div class="form-group">
-                <textarea class="form-control" id="otherBox" rows="3" placeholder="Let us know what service you require and we will get back to you"></textarea>    
-            </div>
-            <div class="form-group">
-                <label for="InputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">This is so we can confirm an appointment with you. We'll never share your email with anyone else.</small>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-</div>    
-<div class="branches-list row" id ="york">
-        <div class="branch-item col-lg-6 col-md-12 col-sm-12" ><h3>York</h3><h6>Heslington<br>YO10 5DD<br><a class="tel"  href="tel:01904765234">01904 765234</a><br>Open 8am-6pm Mon-Fri</h6></div>
-        
-    <div class="branch-item col-lg-6 col-md-12 col-sm-12"><h3>Leeds</h3><h6>Woodhouse<br>Leeds<br>LS2 9JT<br><a class="tel"  href="tel:01132768943">0113 2768943</a><br>Open 8am-6pm Mon-Fri</h6></div>
-</div>   
-<div class="branches-list row" id="bradford">
-        <div class="branch-item col-lg-6 col-md-12 col-sm-12" ><h3>Bradford</h3><h6>Richmond Rd<br>BD7 1DP<br><a class="tel"  href="tel:01274567934">01274 567934</a><br>Open 8am-6pm Mon-Fri</h6></div>
-
-    <div class="branch-item col-lg-6 col-md-12 col-sm-12"><h3>Leeds</h3><h6>Woodhouse<br>Leeds<br>LS2 9JT<br><a class="tel"  href="tel:01132768943">0113 2768943</a><br>Open 8am-6pm Mon-Fri</h6></div>
-</div>   
-<div class="branches-list row" id="manchester">
-        <div class="branch-item col-lg-6 col-md-12 col-sm-12" ><h3>Manchester</h3><h6>Oxford Rd<br>M13 9PL<br><a class="tel"  href="tel:0161673456">0161 673456</a><br>Open 7am-11pm Mon-Sun</h6></div>
-
-    <div class="branch-item col-lg-6 col-md-12 col-sm-12"><h3>Leeds</h3><h6>Woodhouse<br>Leeds<br>LS2 9JT<br><a class="tel"  href="tel:01132768943">0113 2768943</a><br>Open 8am-6pm Mon-Fri</h6></div>
-</div>   
-<div class="branches-list row" id="london">
-        <div class="branch-item col-lg-6 col-md-12 col-sm-12" ><h3>London</h3><h6>Brunswick Square<br>WC1N 1AX<br><a class="tel"  href="tel:02077535800">0207 7535800</a><br>Open 8am-11pm Mon-Sun</h6></div>
-
-    <div class="branch-item col-lg-6 col-md-12 col-sm-12"><h3>Leeds</h3><h6>Woodhouse<br>Leeds<br>LS2 9JT<br><a class="tel"  href="tel:01132768943">0113 2768943</a><br>Open 8am-6pm Mon-Fri</h6></div>
-</div> 
-<div class="branches-list row" id="sheffield">
-        <div class="branch-item col-lg-6 col-md-12 col-sm-12" ><h3>Sheffield</h3><h6>Weston Road<br>S10 2TN<br><a class="tel"  href="tel: 01142222000"> 0114 2222000</a><br>Open 6am-10pm Mon-Sat</h6></div>
-
-    <div class="branch-item col-lg-6 col-md-12 col-sm-12"><h3>Leeds</h3><h6>Woodhouse<br>Leeds<br>LS2 9JT<br><a class="tel"  href="tel:01132768943">0113 2768943</a><br>Open 8am-6pm Mon-Fri</h6></div>
-</div> 
-<div class="branches-list row" id="birmingham">
-        <div class="branch-item col-lg-6 col-md-12 col-sm-12" ><h3>Birmingham</h3><h6>Green Lane<br>B14 7JG<br><a class="tel"  href="tel:01214143344">0121 4143344</a><br>Open 9am-6pm Mon-Fri</h6></div>
-
-    <div class="branch-item col-lg-6 col-md-12 col-sm-12"><h3>Leeds</h3><h6>Woodhouse<br>Leeds<br>LS2 9JT<br><a class="tel"  href="tel:01132768943">0113 2768943</a><br>Open 8am-6pm Mon-Fri</h6></div>
-</div> 
-<div class="branches-list row" id="newcastle">
-        <div class="branch-item col-lg-6 col-md-12 col-sm-12" ><h3>Newcastle</h3><h6>Tyne Avenue<br>NE1 7RU<br><a class="tel"  href="tel:01912086000">0191 2086000</a><br>Open 8am-5pm Mon-Fri</h6></div>
-
-    <div class="branch-item col-lg-6 col-md-12 col-sm-12"><h3>Leeds</h3><h6>Woodhouse<br>Leeds<br>LS2 9JT<br><a class="tel"  href="tel:01132768943">0113 2768943</a><br>Open 8am-6pm Mon-Fri</h6></div>
-</div> 
-<div class="branches-list row" id="liverpool">
-        <div class="branch-item col-lg-6 col-md-12 col-sm-12" ><h3>Liverpool</h3><h6>Brownlow Road<br>L69 3BX<br><a class="tel"  href="tel:01517942000">0151 7942000</a><br>Open 8am-8pm Mon-Sat</h6></div>
-
-    <div class="branch-item col-lg-6 col-md-12 col-sm-12"><h3>Leeds</h3><h6>Woodhouse<br>Leeds<br>LS2 9JT<br><a class="tel"  href="tel:01132768943">0113 2768943</a><br>Open 8am-6pm Mon-Fri</h6></div>
-</div> 
-<div class="branches-list row" id="nottingham">
-        <div class="branch-item col-lg-6 col-md-12 col-sm-12" ><h3>Nottingham</h3><h6>East Drive<br>NG7 2RD<br><a class="tel"  href="tel:01159515151">0115 9515151</a><br>Open 7am-7pm Mon-Sat</h6></div>
-
-    <div class="branch-item col-lg-6 col-md-12 col-sm-12"><h3>Leeds</h3><h6>Woodhouse<br>Leeds<br>LS2 9JT<br><a class="tel"  href="tel:01132768943">0113 2768943</a><br>Open 8am-6pm Mon-Fri</h6></div>
-</div> 
+        <div class="branch-item col-lg-6 col-md-12 col-sm-12">
+            <form id="form-map">
+                <div class="form-group">
+                    <label for="service_required">Which service do you require?</label>
+                    <select class="form-control" id="FormControlSelect" onchange="myOptions(this)">
+                        <option value="" disabled selected>Select your option</option>
+                        <option value="covid" id="covid">Covid Testing</option>
+                        <option value="orderMeds" id="order_meds">Order Medication</option>
+                        <option value="travel" id="travel">Travel Vaccinations</option>
+                        <option value="bloodTest" id="blood_test">Blood test for vitamins</option>
+                        <option value="bpCheck" id="bp_check">Blood Pressure Check</option>
+                        <option value="other" id="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group" id="dateService">
+                    <label for="start">When would you like us to book you an appointment?</label><br>
+                    <input type="date" id="start" name="trip-start" min="" max="">      
+                </div>
+                <div class="form-group" id="dateMedication">
+                    <label for="start">When would you to pick up your medication?</label><br>
+                    <input type="date" name="trip-start" min="" max="">   
+                </div>
+                <div class="form-group" id="searchBox">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="otherBox" rows="3" placeholder="Let us know what service you require and we will get back to you"></textarea>    
+                </div>
+                <div class="form-group">
+                    <label for="InputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">This is so we can confirm an appointment with you. We'll never share your email with anyone else.</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>     
 </div>
 </section>
 <footer>

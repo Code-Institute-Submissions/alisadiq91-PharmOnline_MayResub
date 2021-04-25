@@ -93,6 +93,33 @@ marker.addListener('click',function(){
         el.classList.remove("pharmaselected");
     });
 
-    document.getElementById(this.divid).classList.add('pharmaselected');
+    document.getElementById(this.divid).style.display = "block";
+    document.getElementById("form-map").style.display = "block";
 });
 }}}
+
+function myOptions(optionSelect)
+{
+    if(optionSelect){
+        optionValue = optionSelect.value;
+        if(optionValue == "covid"){
+            document.getElementById("dateService").style.display = "block";
+        }
+        else if(optionValue == "travel"){
+            document.getElementById("dateService").style.display = "block";
+                }
+        else if(optionValue == "blood_test"){
+            document.getElementById("dateService").style.display = "block";
+                }
+        else if(optionValue == "bp_check"){
+            document.getElementById("dateService").style.display = "block";
+                }
+        else if(optionValue == "other"){
+            document.getElementById("otherBox").style.display = "block";
+                }
+        else if(optionValue == "orderMeds"){
+            document.querySelector("#dateMedication").style.display = "block";
+            document.querySelector("#searchBox").style.display = "block";
+                }
+       
+}}
