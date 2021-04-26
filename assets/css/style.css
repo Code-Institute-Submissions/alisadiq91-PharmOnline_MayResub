@@ -386,11 +386,9 @@ padding-left: 0;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
      color: black;
+     display: none;
 }
 
-#leeds, #york, #bradford, #manchester, #london, #sheffield, #birmingham, #newcastle, #liverpool, #nottingham, #form-map{
-    display: none;
-}
 
 #searchBox, #otherBox, #dateService, #dateMedication {
     display: none;

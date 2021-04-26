@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
       
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function() {
+        emailjs.init("user_VTMnEhRsonpEtDwJFs1O2");
+        })();
+        </script>
     
     <title>PharmOnline</title>
        
@@ -52,8 +58,8 @@
 <h2 class="branches-title">Find us at our 10 branches accross the UK!</h2>
 
 <div class="container-fluid">
-    <div class="branches-list row">
-            <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="leeds"><h3>Leeds</h3><h6>Woodhouse<br>LS2 9JT<br><a class="tel"  href="tel:01132768943">0113 2768943</a><br>Open 8am-6pm Mon-Fri</h6></div>
+    <div class="branches-list row" id="branchChoice">
+            <div class="branch-item col-lg-6 col-md-12 col-sm-12" value="leeds" id="leeds"><h3>Leeds</h3><h6>Woodhouse<br>LS2 9JT<br><a class="tel"  href="tel:01132768943">0113 2768943</a><br>Open 8am-6pm Mon-Fri</h6></div>
             <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="york"><h3>York</h3><h6>Heslington<br>YO10 5DD<br><a class="tel"  href="tel:01904765234">01904 765234</a><br>Open 8am-6pm Mon-Fri</h6></div>
             <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="bradford"><h3>Bradford</h3><h6>Richmond Rd<br>BD7 1DP<br><a class="tel"  href="tel:01274567934">01274 567934</a><br>Open 8am-6pm Mon-Fri</h6></div>
             <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="manchester"><h3>Manchester</h3><h6>Oxford Rd<br>M13 9PL<br><a class="tel"  href="tel:0161673456">0161 673456</a><br>Open 7am-11pm Mon-Sun</h6></div>
@@ -64,39 +70,36 @@
             <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="liverpool"><h3>Liverpool</h3><h6>Brownlow Road<br>L69 3BX<br><a class="tel"  href="tel:01517942000">0151 7942000</a><br>Open 8am-8pm Mon-Sat</h6></div>
             <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="nottingham"><h3>Nottingham</h3><h6>East Drive<br>NG7 2RD<br><a class="tel"  href="tel:01159515151">0115 9515151</a><br>Open 7am-7pm Mon-Sat</h6></div>
 
-        <div class="branch-item col-lg-6 col-md-12 col-sm-12">
-            <form id="form-map">
+        <div class="branch-item  col-lg-6 col-md-12 col-sm-12" id="branch-form">
+            <form onsubmit="event.preventDefault(); sendEmailMap();">
+                <div class="form-group" id="branchSelected"></div>
                 <div class="form-group">
                     <label for="service_required">Which service do you require?</label>
-                    <select class="form-control" id="FormControlSelect" onchange="myOptions(this)">
+                    <select class="form-control" id="serviceSelected" onchange="myOptions(this)">
                         <option value="" disabled selected>Select your option</option>
-                        <option value="covid" id="covid">Covid Testing</option>
-                        <option value="orderMeds" id="order_meds">Order Medication</option>
-                        <option value="travel" id="travel">Travel Vaccinations</option>
-                        <option value="bloodTest" id="blood_test">Blood test for vitamins</option>
-                        <option value="bpCheck" id="bp_check">Blood Pressure Check</option>
-                        <option value="other" id="other">Other</option>
+                        <option value="covid-test" id="covid" data-div-id="dateService">Covid Testing</option>
+                        <option value="medication-order" data-div-id="dateMedication" id="order_meds">Order Medication</option>
+                        <option value="travel-vaccination" data-div-id="dateService" id="travel">Travel Vaccinations</option>
+                        <option value="blood-test" data-div-id="dateService" id="blood_test">Blood test for vitamins</option>
+                        <option value="blood-pressure-check"  data-div-id="dateService" id="bp_check">Blood Pressure Check</option>
+                        <option value="other" data-div-id="otherBox" id="other">Other</option>
                     </select>
                 </div>
                 
-                <div class="form-group" id="dateService">
+                <div class="form-group datediv" id="dateService">
                     <label for="start">When would you like us to book you an appointment?</label><br>
-                    <input type="date" id="start" name="trip-start" min="" max="">      
+                    <input type="date" id="date" name="trip-start" min="" max="2021-12-31">      
                 </div>
-                <div class="form-group" id="dateMedication">
+                <div class="form-group datediv" id="dateMedication">
                     <label for="start">When would you to pick up your medication?</label><br>
-                    <input type="date" name="trip-start" min="" max="">   
+                    <input type="date" name="trip-start" min="" max="2021-12-31">   
                 </div>
-                <div class="form-group" id="searchBox">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" id="otherBox" rows="3" placeholder="Let us know what service you require and we will get back to you"></textarea>    
+                <div class="form-group ">
+                    <textarea class="form-control datediv" id="otherBox" rows="3" placeholder="Let us know what service you require and we will get back to you"></textarea>    
                 </div>
                 <div class="form-group">
                     <label for="InputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <input type="email" class="form-control" id="fromEmailMap" aria-describedby="emailHelp" placeholder="Enter email">
                     <small id="emailHelp" class="form-text text-muted">This is so we can confirm an appointment with you. We'll never share your email with anyone else.</small>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>

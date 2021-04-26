@@ -87,14 +87,15 @@ marker.addListener('click',function(){
 
     infoWindow.open(map, marker);
     console.log("clicked the marker ", this.divid);
-    var elems = document.querySelectorAll(".pharmaselected");
-
+    var elems = document.querySelectorAll(".branch-item");
+    document.getElementById("branch-form").style.display = "none";
     [].forEach.call(elems, function(el) {
-        el.classList.remove("pharmaselected");
+        el.style.display = "none";
     });
 
     document.getElementById(this.divid).style.display = "block";
-    document.getElementById("form-map").style.display = "block";
+    document.getElementById("branch-form").style.display = "block";
+    document.getElementById("branchSelected").innerHTML = "You have selected our " + this.divid.toUpperCase() + " branch";
 });
 }}}
 
@@ -102,24 +103,57 @@ function myOptions(optionSelect)
 {
     if(optionSelect){
         optionValue = optionSelect.value;
-        if(optionValue == "covid"){
-            document.getElementById("dateService").style.display = "block";
-        }
-        else if(optionValue == "travel"){
-            document.getElementById("dateService").style.display = "block";
-                }
-        else if(optionValue == "blood_test"){
-            document.getElementById("dateService").style.display = "block";
-                }
-        else if(optionValue == "bp_check"){
-            document.getElementById("dateService").style.display = "block";
-                }
-        else if(optionValue == "other"){
-            document.getElementById("otherBox").style.display = "block";
-                }
-        else if(optionValue == "orderMeds"){
-            document.querySelector("#dateMedication").style.display = "block";
-            document.querySelector("#searchBox").style.display = "block";
-                }
-       
+        showDivId = optionSelect.options[optionSelect.selectedIndex].getAttribute('data-div-id');
+        var elems = document.querySelectorAll(".datediv");
+        [].forEach.call(elems, function(el) {
+            el.style.display = "none";
+        });
+        document.getElementById(showDivId).style.display = "block";
 }}
+
+// email submission for branch form
+
+//alert for contact us form submission 
+
+ function showAlertMap(){
+      alert("Thank you for choosing us!\nYour selected store will get back to you with your confirmed appointment.");
+  }
+
+
+
+//emailJS map form
+
+function sendEmailMap() {
+
+    var branch = document.getElementById("branchChoice").value;
+    var service = document.getElementById("serviceSelected").value;
+	  var email = document.getElementById("fromEmailMap").value;
+      var otherMessage = document.getElementById("otherBox").value;
+      var date = document.getElementById("date").value;
+      
+	  
+				 var mapEmail ={
+                      branchChoice: branch,
+                      serviceSelected: service,
+					  fromEmailMap: email,
+                      otherBox: otherMessage,
+					  date: date,
+                      
+				  };
+
+                  emailjs.send("service_mc16uvn","template_hsw25dm", mapEmail)
+				  .then(function(response){
+					  console.log("success", response.status);
+					  showAlertMap(); 
+                      document.getElementById("branchChoice").value = '';
+                      document.getElementById("serviceSelected").value = '';
+					  document.getElementById("fromEmailMap").value = '';
+                      document.getElementById("otherBox").value = '';
+					  document.getElementById("date").value = '';
+                      
+				  });
+}
+
+
+	  
+  
