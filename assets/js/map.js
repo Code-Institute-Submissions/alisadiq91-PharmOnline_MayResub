@@ -1,3 +1,5 @@
+//map locations
+
 function initMap (){
 
 var locations = {
@@ -60,6 +62,7 @@ addPharmacy({coordinates:{lat:52.9397,lng:-1.1928},
     divid: "nottingham"
 });
 
+//map markers
 
 function addPharmacy(details){
     var marker = new google.maps.Marker({
@@ -73,6 +76,7 @@ function addPharmacy(details){
 
     });
 
+//map info window
 
 if(details.content){
 
@@ -93,11 +97,15 @@ marker.addListener('click',function(){
         el.style.display = "none";
     });
 
+//map marker click to show branch address and form
+
     document.getElementById(this.divid).style.display = "block";
     document.getElementById("branch-form").style.display = "block";
     document.getElementById("branchSelected").innerHTML = "You have selected our " + this.divid.toUpperCase() + " branch";
 });
 }}}
+
+//function to have each option selected show a different element
 
 function myOptions(optionSelect)
 {
@@ -113,7 +121,7 @@ function myOptions(optionSelect)
 
 // email submission for branch form
 
-//alert for contact us form submission 
+//alert for map form submission 
 
  function showAlertMap(){
       alert("Thank you for choosing us!\nYour selected store will get back to you with your confirmed appointment.");

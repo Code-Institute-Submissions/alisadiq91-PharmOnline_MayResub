@@ -4,15 +4,10 @@ body {
 background: whitesmoke;
 }
 header {
-
     text-align: center;
-    
     border-bottom: solid 2px navy;
-    
     padding-bottom: 20px;
 }
-
-
 
 .logo {
    font-family: 'Roboto Condensed', sans-serif;
@@ -51,11 +46,11 @@ header {
 .header-link:hover {
     color: rgb(0, 79, 182);
     text-decoration: none;
-     }
+}
 
-     .header-icon {
-     padding-bottom: 10px;
-     padding-top: 20px;
+.header-icon {
+    padding-bottom: 10px;
+    padding-top: 20px;
  }
 
 
@@ -78,13 +73,12 @@ header {
 
 footer {
     text-align: center;
-  
     border-top: 2px solid navy;
 }
 
 .footer-title {
     font-family: 'Raleway', sans-serif;
-     color: navy;
+    color: navy;
     font-size: 20px;
     padding-top : 20px;
     padding-bottom: 10px;
@@ -132,18 +126,18 @@ color:  rgb(0, 79, 182);
 color:  rgb(0, 79, 182);
 }
 
-/* main section */
+/* main section with image and main list */
 
 .main-section {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .main-list {
     font-family: 'Raleway', sans-serif;
     padding-top: 150px;
     list-style-type: none;
-    font-weight: bold;
-    
+    font-weight: bold; 
 }
 
 .fa-clipboard-check {
@@ -156,8 +150,6 @@ color:  rgb(0, 79, 182);
     font-size: 25px;
     color: navy;
     font-weight: bold;
-    
-   
 }
 
 .dl-link{
@@ -175,20 +167,16 @@ color:  rgb(0, 79, 182);
     right: 10%;
 }
 
-/* steps */
+/* steps carousel section */
 
 .steps {
     list-style-type: none;
     text-align: center;
-    
     padding-top: 30px;
-   
-    
 }
 
 .steps-section {
-
-border-top: 2px solid navy;
+    border-top: 2px solid navy;
 }
 
 .steps-title {
@@ -276,6 +264,7 @@ border-top: 2px solid navy;
      cursor: pointer;
      font-weight: bold;
 }
+
 .answer {
     display: none;
     font-size: 15px;
@@ -290,11 +279,11 @@ border-top: 2px solid navy;
 }
 
 /* contact us form */
-.contact-us-form{
 
-font-family: 'Raleway', sans-serif;
-font-weight: bold;
-padding-bottom: 50px;
+.contact-us-form{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-bottom: 50px;
 }
 
 .contact-title {
@@ -319,7 +308,6 @@ textarea {
 }
 
 
-
 /* Find us page */
 
 #map {
@@ -333,12 +321,6 @@ textarea {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     color: navy;
-}
-
-.pharmaselected{
-       border: navy 1px solid;
-       color: navy;
-       background: rgba(128, 128, 128, 0.486);
 }
 
 .findus-title {
@@ -369,12 +351,10 @@ textarea {
 }
 
 .branches-list {
-text-align: center;
-padding-left: 0;
+    text-align: center;
+    padding-left: 0;
     padding-bottom: 50px;
-     
-     margin: 0;
-   
+    margin: 0;
 }
 
 .list-inline-item:not(:last-child) {
@@ -389,14 +369,9 @@ padding-left: 0;
      display: none;
 }
 
-
 #searchBox, #otherBox, #dateService, #dateMedication {
     display: none;
 }
-
-
-
-
 
 /* covid page */
 
@@ -424,7 +399,7 @@ padding-left: 0;
 }
 
 .bottom-padding {
-padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 a { color: inherit; } 
@@ -455,14 +430,12 @@ a { color: inherit; }
        .dl-links-individual {
     padding-right: 50px;
     padding-left: 50px;
-}
-    .fa-clipboard-check {
+    }
+
+        .fa-clipboard-check {
     font-size: 20px;
     }
 
-    
-
-  
 @media screen and (max-width: 850px) and (min-width: 701px){
 
 
@@ -481,47 +454,48 @@ a { color: inherit; }
 
     .branch-item {
     margin-bottom: 30px;
-}
+    }
+
     .branches-list {
         padding-left: 0;
-}
+    }
 
     .branch-item {
         margin-left: 0px;
-}
+    }
 
     .main-image{
         padding-bottom: 30px;
-}
+    }
 
     .main-list-item {
         font-size:15px;
         padding-left: 150px;
-}
+    }
 
     .dl-link{
         padding-top: 15px;
         margin-right: 0;
         padding-left: 0;
-}
+    }
 
     .dl-links-individual {
         padding-right: 0px;
         padding-left: 0px;
-}
+    }
 
-.header-icon {
+    .header-icon {
      display: none;
- }
+    }
 
- .header-list{
+    .header-list{
     margin-bottom: 20px;
-}
+    }
 
 }
 
-
 }
+
 @media screen and (max-width: 700px) and (min-width: 601px){
 
 
@@ -533,6 +507,7 @@ a { color: inherit; }
     .header-list {
         border-bottom: 1px solid navy;
     }
+
     .nhs-logo {
         display: none;
     }
@@ -544,6 +519,7 @@ a { color: inherit; }
     .branch-item {
     margin-bottom: 30px;
 }
+
 .branches-list {
     padding-left: 0;
 }
@@ -557,13 +533,13 @@ a { color: inherit; }
 
     }
 
-    .dl-link{
+.dl-link{
     padding-top: 15px;
     margin-right: 0;
     padding-left: 0;
     }
 
-       .dl-links-individual {
+.dl-links-individual {
     padding-right: 0px;
     padding-left: 0px;
 }
