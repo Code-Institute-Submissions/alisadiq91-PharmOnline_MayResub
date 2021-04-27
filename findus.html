@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- links to bootstrap, font awesome, css files, js files, jquery and emailjs -->  
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-  
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
-      
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-        <script type="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
         (function() {
         emailjs.init("user_VTMnEhRsonpEtDwJFs1O2");
         })();
-        </script>
-    
+    </script>
+      
+      
     <title>PharmOnline</title>
        
 
@@ -27,6 +29,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
+<!-- header -->  
+
 <header>  
     <div class="container-fluid">
         <div class="row">  
@@ -34,28 +38,34 @@
             <img class="nhs-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/NHS-Logo.svg/371px-NHS-Logo.svg.png" alt="nhslogo" width="100" height="45">
         </div>
         <div class="container-fluid">
-        <ul class="row header-padding">
-            <li class="col-lg-3 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="findus.html"><i class="header-icon fas fa-search-location"></i>    &nbsp;Find Us</a></li>
-            <li class="col-lg-3 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="covid.html"><i class="header-icon fas fa-virus"></i>    &nbsp;Covid-19</a></li>
-            <li class="col-lg-3 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="faqs.html"><i class="header-icon far fa-question-circle"></i>    &nbsp;FAQs</a></li>
-            <li class="col-lg-3 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="contact.html"><i class="header-icon far fa-envelope"></i>    &nbsp;Contact Us</a></li>
+        <ul class="row header-padding justify-content-center">
+            <li class="col-lg-2 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="index.html"><i class="header-icon fas fa-home"></i>    &nbsp;Home</a></li>
+            <li class="col-lg-2 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="findus.html"><i class="header-icon fas fa-search-location"></i>    &nbsp;Find Us</a></li>
+            <li class="col-lg-2 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="covid.html"><i class="header-icon fas fa-virus"></i>    &nbsp;Covid-19</a></li>
+            <li class="col-lg-2 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="faqs.html"><i class="header-icon far fa-question-circle"></i>    &nbsp;FAQs</a></li>
+            <li class="col-lg-2 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="contact.html"><i class="header-icon far fa-envelope"></i>    &nbsp;Contact Us</a></li>
         </ul>
-      
         </div>
-    </div>
-</header>
+    </div>    
+</header>  
+
+<!-- map section -->  
 
 <section class="findus-page">
+
 <h1 class="findus-title">Where to find us?</h1>
 <h4>Click each marker for more info!</h4>
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-6-lg col-12-m col-sm-12">
+            <!-- empty div for map -->
             <div id="map"></div>
         </div>
     </div>
 </div>
 <h2 class="branches-title">Find us at our 10 branches accross the UK!</h2>
+
+<!-- address of each branch which shows under the map once marker in map is clicked -->  
 
 <div class="container-fluid">
     <div class="branches-list row" id="branchChoice">
@@ -70,15 +80,21 @@
             <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="liverpool"><h3>Liverpool</h3><h6>Brownlow Road<br>L69 3BX<br><a class="tel"  href="tel:01517942000">0151 7942000</a><br>Open 8am-8pm Mon-Sat</h6></div>
             <div class="branch-item col-lg-6 col-md-12 col-sm-12" id="nottingham"><h3>Nottingham</h3><h6>East Drive<br>NG7 2RD<br><a class="tel"  href="tel:01159515151">0115 9515151</a><br>Open 7am-7pm Mon-Sat</h6></div>
 
+<!-- form to appear beside branch address for patient to fill out -->  
+
         <div class="branch-item  col-lg-6 col-md-12 col-sm-12" id="branch-form">
             <form onsubmit="event.preventDefault(); sendEmailMap();">
+
+                <!-- empty div to show which branch patient has selected -->  
+
                 <div class="form-group" id="branchSelected"></div>
                 <div class="form-group">
+
+                    <!-- drop down list to select which service the patient requires -->  
                     <label for="service_required">Which service do you require?</label>
                     <select class="form-control" id="serviceSelected" onchange="myOptions(this)">
                         <option value="" disabled selected>Select your option</option>
                         <option value="covid-test" id="covid" data-div-id="dateService">Covid Testing</option>
-                        <option value="medication-order" data-div-id="dateMedication" id="order_meds">Order Medication</option>
                         <option value="travel-vaccination" data-div-id="dateService" id="travel">Travel Vaccinations</option>
                         <option value="blood-test" data-div-id="dateService" id="blood_test">Blood test for vitamins</option>
                         <option value="blood-pressure-check"  data-div-id="dateService" id="bp_check">Blood Pressure Check</option>
@@ -86,13 +102,11 @@
                     </select>
                 </div>
                 
+                <!-- form groups that show depending on which service the patient has chosen -->  
+                
                 <div class="form-group datediv" id="dateService">
                     <label for="start">When would you like us to book you an appointment?</label><br>
                     <input type="date" id="date" name="trip-start" min="" max="2021-12-31">      
-                </div>
-                <div class="form-group datediv" id="dateMedication">
-                    <label for="start">When would you like to pick up your medication?</label><br>
-                    <input type="date" name="trip-start" min="" max="2021-12-31">   
                 </div>
                 <div class="form-group ">
                     <textarea class="form-control datediv" id="otherBox" rows="3" placeholder="Let us know what service you require and we will get back to you"></textarea>    
@@ -102,50 +116,43 @@
                     <input type="email" class="form-control" id="fromEmailMap" aria-describedby="emailHelp" placeholder="Enter email">
                     <small id="emailHelp" class="form-text text-muted">This is so we can confirm an appointment with you. We'll never share your email with anyone else.</small>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </div>     
 </div>
 </section>
+
+<!-- footer  --> 
+ 
 <footer>
 <div class="container-fluid">
-<div class="row">
-    <div class="contact-footer col-lg-4 col-md-12 col-sm-12">
-<h4 class="footer-title"><a class="contact-link" href="contact.html">Contact Us</a></h4>
-<h6>8am-10pm 7 days a week</h6>
-<h6 class = "tel-position"><a class="tel"  href="tel:0800467872">0800467872</a></h6>
+    <div class="row">
+        <div class="contact-footer col-lg-4 col-md-12 col-sm-12">
+            <h4 class="footer-title"><a class="contact-link" href="contact.html">Contact Us</a></h4>
+            <h6>8am-10pm 7 days a week</h6>
+            <h6 class = "tel-position"><a class="tel"  href="tel:0800467872">0800467872</a></h6>
+        </div>
+
+        <div class="download-footer col-lg-4 col-md-12 col-sm-12">
+            <h4 class="footer-title">Download Our App</h4>
+            <ul class="downloads-list">
+                <li class="list-inline-item"><a class="footer-link" href="https://www.apple.com/uk/app-store/" target="_blank"><i class="fab fa-apple"></i></a></li>
+                <li class="list-inline-item"><a class="footer-link" href="https://play.google.com/store/apps?utm_source=emea_Med&utm_medium=hasem&utm_content=Apr2815&utm_campaign=Evergreen&pcampaignid=MKT-EG-emea-gb-1001280-Med-hasem-ap-Evergreen-Apr2815-1%7cONSEM_kwid_43700049312677161&gclid=CjwKCAiAr6-ABhAfEiwADO4sfV-ZQD80ml7hKyi8jU228sZVqpblsavMxfpFOOY_fswnqNzz5wS-dRoC4eoQAvD_BwE&gclsrc=aw.ds" target="_blank"><i class="fab fa-google-play"></i></a></li> 
+            </ul>
+        </div>    
+
+        <div class="socials-footer col-lg-4 col-md-12 col-sm-12">
+            <h4 class="footer-title">Follow Us</h4>
+    
+            <ul class="socials-list">
+                <li class="list-inline-item"><a class="footer-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a class="footer-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a class="footer-link" href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
     </div>
-
-<div class="download-footer col-lg-4 col-md-12 col-sm-12">
-    <h4 class="footer-title">Download Our App</h4>
-    
-        <ul class="downloads-list">
-            <li class="list-inline-item"><a class="footer-link" href="https://www.apple.com/uk/app-store/" target="_blank"><i class="fab fa-apple"></i></a></li>
-            <li class="list-inline-item"><a class="footer-link" href="https://play.google.com/store/apps?utm_source=emea_Med&utm_medium=hasem&utm_content=Apr2815&utm_campaign=Evergreen&pcampaignid=MKT-EG-emea-gb-1001280-Med-hasem-ap-Evergreen-Apr2815-1%7cONSEM_kwid_43700049312677161&gclid=CjwKCAiAr6-ABhAfEiwADO4sfV-ZQD80ml7hKyi8jU228sZVqpblsavMxfpFOOY_fswnqNzz5wS-dRoC4eoQAvD_BwE&gclsrc=aw.ds" target="_blank"><i class="fab fa-google-play"></i></a></li> 
-        </ul>
-    
 </div>
-
-<div class="socials-footer col-lg-4 col-md-12 col-sm-12">
-    <h4 class="footer-title">Follow Us</h4>
-    
-    <ul class="socials-list">
-        <li class="list-inline-item"><a class="footer-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-       <li class="list-inline-item"><a class="footer-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-       <li class="list-inline-item"><a class="footer-link" href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-</ul>
-
-
-</div>
-</div>
-
-
-</div>
-
-
-
-
 </footer>
 
 <script type="text/javascript" src="assets/js/map.js"></script>

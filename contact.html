@@ -34,83 +34,74 @@
             <img class="nhs-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/NHS-Logo.svg/371px-NHS-Logo.svg.png" alt="nhslogo" width="100" height="45">
         </div>
         <div class="container-fluid">
-        <ul class="row header-padding">
-            <li class="col-lg-3 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="findus.html"><i class="header-icon fas fa-search-location"></i>    &nbsp;Find Us</a></li>
-            <li class="col-lg-3 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="covid.html"><i class="header-icon fas fa-virus"></i>    &nbsp;Covid-19</a></li>
-            <li class="col-lg-3 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="faqs.html"><i class="header-icon far fa-question-circle"></i>    &nbsp;FAQs</a></li>
-            <li class="col-lg-3 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="contact.html"><i class="header-icon far fa-envelope"></i>    &nbsp;Contact Us</a></li>
+        <ul class="row header-padding justify-content-center">
+            <li class="col-lg-2 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="index.html"><i class="header-icon fas fa-home"></i>    &nbsp;Home</a></li>
+            <li class="col-lg-2 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="findus.html"><i class="header-icon fas fa-search-location"></i>    &nbsp;Find Us</a></li>
+            <li class="col-lg-2 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="covid.html"><i class="header-icon fas fa-virus"></i>    &nbsp;Covid-19</a></li>
+            <li class="col-lg-2 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="faqs.html"><i class="header-icon far fa-question-circle"></i>    &nbsp;FAQs</a></li>
+            <li class="col-lg-2 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="contact.html"><i class="header-icon far fa-envelope"></i>    &nbsp;Contact Us</a></li>
         </ul>
-      
         </div>
-    </div>
-</header>
+    </div>    
+</header>  
+
+<!-- contact us form --> 
 
 <form class = "contact-us-form" onsubmit="event.preventDefault(); sendEmail();">
-<h1 class="contact-title">Contact Us</h1>
-    <div class="contact-us-margin row justify-content-center">
-        <div class="mb-3 col-lg-8 col-sm-12 col-md-12">
-            <label for="fromName" class="form-label">Full Name</label>
-            <input type = "text" class="form-control" id = "fromName" placeholder="Enter your Name" required>
+        <h1 class="contact-title">Contact Us</h1>
+        <div class="contact-us-margin row justify-content-center">
+            <div class="mb-3 col-lg-8 col-sm-12 col-md-12">
+                <label for="fromName" class="form-label">Full Name</label>
+                <input type = "text" class="form-control" id = "fromName" placeholder="Enter your Name" required>
+            </div>
+            <div class="mb-3 col-lg-8 col-sm-12 col-md-12">
+                <label for="fromEmail" class="form-label">Email Address</label>
+                <input type = "email" class="form-control" id = "fromEmail" placeholder="Enter your Email" required>
+            </div>
+            <div class="mb-3 col-lg-8 col-sm-12 col-md-12">
+                <label for="message" class="form-label">What would you like to tell us?</label>
+                <textarea class="form-control" id="message" placeholder="Enter your message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary col-5">Send Query!</button> 
         </div>
-        <div class="mb-3 col-lg-8 col-sm-12 col-md-12">
-            <label for="fromEmail" class="form-label">Email Address</label>
-            <input type = "email" class="form-control" id = "fromEmail" placeholder="Enter your Email" required>
-        </div>
-        <div class="mb-3 col-lg-8 col-sm-12 col-md-12">
-            <label for="message" class="form-label">What would you like to tell us?</label>
-            <textarea class="form-control" id="message" placeholder="Enter your message" rows="3" required></textarea>
-        </div>
-        
-        <button type="submit" class="btn btn-primary col-5">Send Query!</button>
-        
-    </div>
 </form>
 
 
 
 
-
+<!-- footer --> 
 
 <footer>
-<div class="container-fluid">
-<div class="row">
-    <div class="contact-footer col-lg-4 col-md-12 col-sm-12">
-<h4 class="footer-title"><a class="contact-link" href="contact.html">Contact Us</a></h4>
-<h6>8am-10pm 7 days a week</h6>
-<h6 class = "tel-position"><a class="tel"  href="tel:0800467872">0800467872</a></h6>
-    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="contact-footer col-lg-4 col-md-12 col-sm-12">
+                <h4 class="footer-title"><a class="contact-link" href="contact.html">Contact Us</a></h4>
+                <h6>8am-10pm 7 days a week</h6>
+                <h6 class = "tel-position"><a class="tel"  href="tel:0800467872">0800467872</a></h6>
+            </div>
 
-<div class="download-footer col-lg-4 col-md-12 col-sm-12">
-    <h4 class="footer-title">Download Our App</h4>
-   
-        <ul class="downloads-list">
-            <li class="list-inline-item"><a class="footer-link" href="https://www.apple.com/uk/app-store/" target="_blank"><i class="fab fa-apple"></i></a></li>
-            <li class="list-inline-item"><a class="footer-link" href="https://play.google.com/store/apps?utm_source=emea_Med&utm_medium=hasem&utm_content=Apr2815&utm_campaign=Evergreen&pcampaignid=MKT-EG-emea-gb-1001280-Med-hasem-ap-Evergreen-Apr2815-1%7cONSEM_kwid_43700049312677161&gclid=CjwKCAiAr6-ABhAfEiwADO4sfV-ZQD80ml7hKyi8jU228sZVqpblsavMxfpFOOY_fswnqNzz5wS-dRoC4eoQAvD_BwE&gclsrc=aw.ds" target="_blank"><i class="fab fa-google-play"></i></a></li> 
-        </ul>
-</div>
-
-<div class="socials-footer col-lg-4 col-md-12 col-sm-12">
-    <h4 class="footer-title">Follow Us</h4>
+            <div class="download-footer col-lg-4 col-md-12 col-sm-12">
+                <h4 class="footer-title">Download Our App</h4>
+                <ul class="downloads-list">
+                    <li class="list-inline-item"><a class="footer-link" href="https://www.apple.com/uk/app-store/" target="_blank"><i class="fab fa-apple"></i></a></li>
+                    <li class="list-inline-item"><a class="footer-link" href="https://play.google.com/store/apps?utm_source=emea_Med&utm_medium=hasem&utm_content=Apr2815&utm_campaign=Evergreen&pcampaignid=MKT-EG-emea-gb-1001280-Med-hasem-ap-Evergreen-Apr2815-1%7cONSEM_kwid_43700049312677161&gclid=CjwKCAiAr6-ABhAfEiwADO4sfV-ZQD80ml7hKyi8jU228sZVqpblsavMxfpFOOY_fswnqNzz5wS-dRoC4eoQAvD_BwE&gclsrc=aw.ds" target="_blank"><i class="fab fa-google-play"></i></a></li> 
+                </ul>
+            </div>
     
-    <ul class="socials-list">
-        <li class="list-inline-item"><a class="footer-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-       <li class="list-inline-item"><a class="footer-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-       <li class="list-inline-item"><a class="footer-link" href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-</ul>
-
-
-</div>
-</div>
-
-
-</div>
-
-
-
-
-
+            <div class="socials-footer col-lg-4 col-md-12 col-sm-12">
+                <h4 class="footer-title">Follow Us</h4>
+                <ul class="socials-list">
+                    <li class="list-inline-item"><a class="footer-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item"><a class="footer-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a class="footer-link" href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </footer>
- 
+
+ <!-- email js --> 
+
 <script type="text/javascript">
 (function() {
 emailjs.init("user_VTMnEhRsonpEtDwJFs1O2");
