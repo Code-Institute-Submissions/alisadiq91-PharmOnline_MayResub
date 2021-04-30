@@ -66,6 +66,16 @@ header {
 background-image: url('https://mdbcdn.b-cdn.net/img/svg/hamburger4.svg?color=1729B0');
 }
 
+.navbar-brand {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: navy;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-brand {
+    color: navy;
+}
 nav {
     text-align: center;
     border-bottom: solid 2px navy;
@@ -201,6 +211,7 @@ color:  rgb(0, 79, 182);
      font-size: 30px;
 
 }
+
 
 .carousel-control-prev-icon {
  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
