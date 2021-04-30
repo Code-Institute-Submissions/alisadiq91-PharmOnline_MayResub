@@ -1,4 +1,5 @@
 //map locations
+var selectedBranch = '';
 
 function initMap (){
 
@@ -102,6 +103,7 @@ marker.addListener('click',function(){
     document.getElementById(this.divid).style.display = "block";
     document.getElementById("branch-form").style.display = "block";
     document.getElementById("branchSelected").innerHTML = "You have selected our " + this.divid.toUpperCase() + " branch";
+    selectedBranch = this.divid;
 });
 }}}
 
@@ -133,7 +135,7 @@ function myOptions(optionSelect)
 
 function sendEmailMap() {
 
-    var branch = document.getElementById("branchChoice").value;
+    var branch = selectedBranch;
     var service = document.getElementById("serviceSelected").value;
 	  var email = document.getElementById("fromEmailMap").value;
       var otherMessage = document.getElementById("otherBox").value;

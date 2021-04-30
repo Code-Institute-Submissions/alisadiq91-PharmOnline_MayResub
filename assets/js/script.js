@@ -2,15 +2,27 @@
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
+  
+  
   document.getElementById("mySidenav").style.width = "250px";
+  setTimeout(function(){
+      divsToHide = document.querySelectorAll("#mySidenav a");
+        for(var i = 0; i < divsToHide.length; i++){
+            divsToHide[i].classList.remove("hide");
+        }
+  }, 300)
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
+  divsToHide = document.querySelectorAll("#mySidenav a");
+  for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].classList.add("hide");
+  }
   document.getElementById("mySidenav").style.width = "0";
+  
+
 }
-
-
 
 //steps section mouseover 
  
