@@ -22,16 +22,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+<!-- company logo with link to home  -->
 
-<!-- header  -->   
-
-
-<header>  
-    <div class="container-fluid">
-        <div class="row">  
-            <h1 class="logo-position col-12"><a class="logo" href="index.html"><i class="fas fa-laptop-medical"></i>  PharmOnline</a></h1>
+<div class="container-fluid">
+        <div class="row ">  
+            <h1 class="logo-position col-12 d-flex justify-content-center"><a class="logo" href="index.html"><i class="fas fa-laptop-medical"></i>  PharmOnline</a></h1>
             <img class="nhs-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/NHS-Logo.svg/371px-NHS-Logo.svg.png" alt="nhslogo" width="100" height="45">
         </div>
+</div>
+<!-- header for desktop  -->   
+
+<header class="d-none d-lg-block d-xl-block">  
+    
         <div class="container-fluid">
         <ul class="row header-padding justify-content-center">
             <li class="col-lg-2 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="index.html"><i class="header-icon fas fa-home"></i>    &nbsp;Home</a></li>
@@ -41,8 +43,43 @@
             <li class="col-lg-2 col-sm-12 col-md-12 header-list list-inline-item"><a class="header-link" href="contact.html"><i class="header-icon far fa-envelope"></i>    &nbsp;Contact Us</a></li>
         </ul>
         </div>
-    </div>    
-</header>     
+      
+</header> 
+        <!--Navbar on mobiles with burger menu-->
+
+<nav class="navbar navbar-light navbar-3 white d-lg-none">
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+    aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link header-link" href="index.html"><i class="header-icon fas fa-home"></i>    &nbsp;Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link header-link" href="findus.html"><i class="header-icon fas fa-search-location"></i>    &nbsp;Find Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link header-link" href="covid.html"><i class="header-icon fas fa-virus"></i>    &nbsp;Covid-19</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link header-link" href="faqs.html"><i class="header-icon far fa-question-circle"></i>    &nbsp;FAQs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link header-link" href="contact.html"><i class="header-icon far fa-envelope"></i>    &nbsp;Contact Us</a>
+      </li>
+    </ul>
+    <!-- Links -->
+
+  </div>
+  <!-- Collapsible content -->
+
+</nav>     
 
 
 <!-- main section with image and bullet points -->

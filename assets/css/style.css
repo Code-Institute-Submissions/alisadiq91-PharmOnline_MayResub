@@ -60,14 +60,20 @@ header {
     margin-left: 15px;
 }
 
-.opening-times {
-    position: absolute;
-    margin-top: 15px;
-    padding-left: 1050px;
-    font-size: 12px;
-    font-family: 'Raleway', sans-serif;
-    color: grey;
+/* burger menu for smaller devices  */
+
+.navbar.navbar-3 .navbar-toggler-icon {
+background-image: url('https://mdbcdn.b-cdn.net/img/svg/hamburger1.svg?color=6a1b9a');
 }
+
+nav {
+    text-align: center;
+    border-bottom: solid 2px navy;
+    padding-bottom: 20px;
+}
+
+
+
 
 /* footer  */
 
@@ -484,10 +490,6 @@ a { color: inherit; }
         padding-left: 0px;
     }
 
-    .header-icon {
-     display: none;
-    }
-
     .header-list{
     margin-bottom: 20px;
     }
@@ -543,11 +545,6 @@ a { color: inherit; }
     padding-right: 0px;
     padding-left: 0px;
 }
-
-
-.header-icon {
-     display: none;
- }
 
  .header-list{
     margin-bottom: 20px;
@@ -643,10 +640,5 @@ a { color: inherit; }
 .branch-item {
     margin-left: 0px;
 }
-
-
-.header-icon {
-     display: none;
- }
 }
 
