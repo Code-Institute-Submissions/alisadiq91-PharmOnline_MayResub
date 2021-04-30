@@ -35,7 +35,7 @@ function addPharmacy(details){
     var marker = new google.maps.Marker({
         position:details.coordinates,
         map:map,
-        icon:'http://maps.google.com/mapfiles/ms/icons/hospitals.png',
+        icon:'https://maps.google.com/mapfiles/ms/icons/hospitals.png',
         content:details.content,
         name:details.name,
         divid:details.divid
