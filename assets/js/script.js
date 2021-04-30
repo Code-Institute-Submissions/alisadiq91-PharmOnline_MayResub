@@ -1,4 +1,18 @@
- //steps section mouseover 
+// sidenav functions
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
+//steps section mouseover 
  
  $(document).ready(function () {
     $(".hover-me-1").mouseover(function () {
@@ -61,15 +75,7 @@
     });
   });
 
-/* Set the width of the side navigation to 250px */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
 
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
 
 //faqs section toggle
 
