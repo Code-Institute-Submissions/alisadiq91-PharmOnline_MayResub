@@ -62,18 +62,25 @@ header {
 
 /* burger menu for smaller devices  */
 
-.navbar.navbar-3 .navbar-toggler-icon {
-background-image: url('https://mdbcdn.b-cdn.net/img/svg/hamburger1.svg?color=6a1b9a');
+.navbar.navbar-8 .navbar-toggler-icon {
+background-image: url('https://mdbcdn.b-cdn.net/img/svg/hamburger4.svg?color=1729B0');
 }
 
 nav {
     text-align: center;
     border-bottom: solid 2px navy;
+    border-top: solid 2px navy;
     padding-bottom: 20px;
+    background-color: lightgrey;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 128, 0.623);
+}
 
-
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: navy;
+}
 
 /* footer  */
 
