@@ -6,7 +6,7 @@ background: whitesmoke;
 header {
     text-align: center;
     border-bottom: solid 2px navy;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .logo {
@@ -55,41 +55,59 @@ header {
 
 
 .nhs-logo {
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 15px;
+    top: 15px;
 }
 
-/* burger menu for smaller devices  */
+/* The side navigation menu */
 
-.navbar.navbar-8 .navbar-toggler-icon {
-background-image: url('https://mdbcdn.b-cdn.net/img/svg/hamburger4.svg?color=1729B0');
-}
-
-.navbar-brand {
-    font-size: 20px;
+.open-menu {
+    font-size: 22px;
     font-family: 'Raleway', sans-serif;
     color: navy;
     font-weight: bold;
+    top: 2px;
+    cursor: pointer;
+    padding-top: 30px;
 }
 
-.navbar-light .navbar-brand {
-    color: navy;
-}
-nav {
-    text-align: center;
-    border-bottom: solid 2px navy;
-    border-top: solid 2px navy;
-    padding-bottom: 20px;
-    background-color: lightgrey;
-}
-
-.navbar-light .navbar-nav .nav-link {
+.open-menu:hover {
     color: rgba(0, 0, 128, 0.623);
 }
+.sidenav {
+    text-align: left;
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: lightgrey; 
+  overflow-x: hidden; 
+  padding-top: 100px; 
+  transition: 0.5s;
+}
 
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: navy;
+/* The navigation menu links */
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: navy;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: rgba(0, 0, 128, 0.623);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 /* footer  */
