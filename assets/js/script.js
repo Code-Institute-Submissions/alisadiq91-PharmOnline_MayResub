@@ -10,7 +10,7 @@ function openNav() {
         for(var i = 0; i < divsToHide.length; i++){
             divsToHide[i].classList.remove("hide");
         }
-  }, 300)
+  }, 300);
 }
 
 /* Set the width of the side navigation to 0 */

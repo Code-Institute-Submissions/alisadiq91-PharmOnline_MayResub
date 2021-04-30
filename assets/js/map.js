@@ -112,7 +112,6 @@ marker.addListener('click',function(){
 function myOptions(optionSelect)
 {
     if(optionSelect){
-        optionValue = optionSelect.value;
         showDivId = optionSelect.options[optionSelect.selectedIndex].getAttribute('data-div-id');
         var elems = document.querySelectorAll(".datediv");
         [].forEach.call(elems, function(el) {
