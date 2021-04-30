@@ -2,7 +2,7 @@
 body {
 
 background: whitesmoke;
-overflow-x: hidden;
+
 }
 header {
     text-align: center;
@@ -225,6 +225,7 @@ color:  rgb(0, 79, 182);
 .steps-section {
     border-top: 2px solid navy;
     height: 500px;
+    overflow-x: hidden;
 }
 
 .steps-title {
