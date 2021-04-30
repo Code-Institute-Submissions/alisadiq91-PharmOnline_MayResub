@@ -417,6 +417,7 @@ textarea {
     font-family: 'Raleway', sans-serif;
      color: black;
      display: none;
+     padding-bottom: 20px;
 }
 
 #searchBox, #otherBox, #dateService, #dateMedication {
