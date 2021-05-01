@@ -570,6 +570,8 @@ Contact Form – I used the integration function on the email JS website to add 
 
 Side Menu - I had help from this link when writing the code for my side menu. [Link](https://www.w3schools.com/howto/howto_js_sidenav.asp)
 
+For checking if a string is blank or contains only white-space. [Link](https://stackoverflow.com/questions/154059/how-can-i-check-for-an-empty-undefined-null-string-in-javascript)
+
 My Tutor Antonio Rodriguez helped me with these parts of my code:
 
     1. To have only 1 branch show if one is clicked after another on google maps.
