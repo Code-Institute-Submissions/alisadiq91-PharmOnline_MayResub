@@ -66,15 +66,6 @@ $(document).ready(function () {
         });
   });
 
-  $(document).ready(function(){
-
-    $('.question').on("click",function(){
-        $(this).show('.fa-arrow-circle-down');
-
-        
-    });
-  });
-
 // function checking if string is empty to use with form which I used from https://stackoverflow.com/questions/154059/how-can-i-check-for-an-empty-undefined-null-string-in-javascript
 
 String.prototype.isEmpty = function() {

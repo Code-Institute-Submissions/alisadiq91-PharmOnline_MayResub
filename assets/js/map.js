@@ -3,6 +3,7 @@ var selectedBranch = '';
 
 function initMap (){
 
+// where the center of map is and how far zoomed in it is to begin with
 var locations = {
     zoom:6,
     center: {lat:53.8008, lng:-1.5491},
@@ -11,6 +12,8 @@ var locations = {
 var map = new google.maps.Map(document.getElementById("map"), locations); 
 
 var infoWindow = null;
+
+//list of pharmacies with address and map location
 
 var pharmacies = [
 {name:"Leeds",divid:"leeds",content:'<div class="map-click"><h4>Leeds</h4></div>',coordinates:{lat:53.8013853,lng:-1.5643944}},
@@ -100,8 +103,6 @@ function myOptions(optionSelect)
  function showAlertMap(){
       alert("Thank you for choosing us!\nYour selected store will get back to you with your confirmed appointment.");
   }
-
-
 
 //emailJS map form
 
