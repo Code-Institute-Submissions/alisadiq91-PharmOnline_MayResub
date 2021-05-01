@@ -405,49 +405,63 @@ Aim
 
 Result
 
-•	The find us page has the google maps API incorporated for the user to see the locations of the 4 pharmacies in the UK. Each marker uses a custom image to show the pharmacy. Once this marker is clicked, the full address is shown in a pop-up window. 
+•	The find us page has the google maps API incorporated for the user to see the locations of the 10 pharmacies in the UK. Each marker uses a custom image to show the pharmacy. Once this marker is clicked, the full address is shown below with a form if the user would like to request a service.
 
-•	Underneath this map is a list of all the branches, their full address, and their phone numbers. 
-
-Aim
-
-•	As a Returning Visitor, I want to find information about which rooms are available, and the cost of these.
-
-Result
-
-•	There is a quick overview of the rooms on the homepage, in the form of a carousel. It contains the room name, difficulty level and an image of what the room is like.
-
-•	The room page contains all information needed regarding the rooms available. There is a teaser video for each room embedded to play in the webpage. To the right of this is a background story of the room, giving the customer a taster of what the room is about. This also contains a recommended team size, price per person and difficulty level.
 
 Aim
 
-•	As a Returning Visitor, I want to be able to book the room I want in a simple way.
+•	As a Returning Visitor, I want to know how to download the application to order my medication.
 
 Result
 
-•	Each webpage has multiple links to the book now page to keep reminding the customer to book.
+•	Download links for Android and iOS are available on every page in the footer.
 
-•	The booking page has a simple form to fill out, and the same submit button as other book now links, for consistency.
-
-•	By setting limits and required attributes, it has been made easy to not make a mistake on the form.
+•	Download links are also available on the home page below the main image.
 
 Aim
 
-•	As a Returning Visitor, I want to be able to be able to see a taster of each room available, as a video or pictures.
+•	As a Returning Visitor, I want to be able to know exactly what the steps are of how to use an online pharmacy.
 
 Result
 
-•	This is explained above as each room has a picture on the homepage in the carousel, and a trailer video on the room page.
+•	The simple 4 steps of how to use an online pharmacy are shown in the carousel on the home page.
+
+•	Shown in a simple way, giving the user the chance to interact with the site.
+
+•	Each step is summarised in a caption for the image, and if the patient wants more info, all they have to do is hover over the image to get a more detailed description.
 
 Aim
 
-•	As a Frequent User, I want to check to see if there are any newly added rooms or challenges.
+•	As a Returning Visitor, I want to be able to have any questions I have answered before I commit to anything.
 
 Result
 
-•	Each new room added will be placed to the top of the room page, with a font awesome icon to show it is new.
+•	This is available in many ways. The contact numbers for all the branches are available on the find us page. The user can click the branch they are closest to and click the number to ring.
 
-•	The home page will also have a link to this new room, again with a font awesome icon.
+•	The telephone number for the online pharmacy is available on every page in the footer.
+
+•	A contact us form is also available on the contact us page, so the user can ask any questions.
+
+•	The user can also request any service that is not listed on the find us page using the "other" option.
+
+
+Aim
+
+•	As a Frequent User, I want to check to see if there are any new services available at each store.
+
+Result
+
+•	Any new services will be added to the home page just under the header to show frequent users immediately when they open the website.
+
+•	New services will also be added to the available options when the form on the find us page is filled out.
+
+Aim
+
+•	As a Frequent User, I want to be able to book other services at the same branch. 
+
+Result
+
+•	The form on the find us page is available to be filled out for frequent users. 
 
 Further Testing
 
@@ -491,7 +505,13 @@ FAQ page - I had help from this link writing the JQuery for my FAQ page. https:/
 
 Contact Form – I used the integration function on the email JS website to add a link to my profile. https://dashboard.emailjs.com/admin/integration/browser
 
-Find us page - My Tutor Antonio Rodriguez helped me to write the code to highlight each branch from the list when clicking the marker.
+Side Menu - I had help from this link when writing the code for my side menu. https://www.w3schools.com/howto/howto_js_sidenav.asp
+
+Find us page - My Tutor Antonio Rodriguez helped me with these parts of my code:
+
+    1. To have only 1 branch show if one is clicked after another on google maps.
+    
+    2. To have only the required sections of the find us page form show if different options are clicked one after the other. 
 
 Media
 
@@ -507,6 +527,8 @@ Apple store - https://miro.medium.com/max/1146/1*POlwgD8liUYUqiEU6IU1Pw.png
 
 Google play store- https://talkhomeapp.com/imgs/icons/download_app_google_play.svg?v=HixK2eXSbwMfMxlyhS4m2OQZwsQDFa5wG1dz9QInL28
 
+Carousel Icons - http://www.w3.org/2000/svg
+
 Step 1 - https://4d0q7u11k31p1qnkosal8q2e-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/pexels-photo-1083931-720x460.jpeg
 
 Step 2 - https://nursingnotes.co.uk/wp-content/uploads/2019/01/Medication.jpeg
@@ -514,6 +536,8 @@ Step 2 - https://nursingnotes.co.uk/wp-content/uploads/2019/01/Medication.jpeg
 Step 3 - https://cuencahighlife.com/wp-content/uploads/2020/02/new-haven-ct-waterbury-pharmacy-body1.jpg
 
 Step 4 - https://images.ctfassets.net/nqqfspfdquz1/3ZL84FFcohI25vIZLSlLcd/7d0e0606f61c372e6e9d40ef57aa3906/Coop_Health_Free_repeat_prescription_delivery_service.jpg?fm=webp&q=60&w=600&h=338
+
+Map marker - https://maps.google.com/mapfiles/ms/icons/hospitals.png
 
 The embedded videos on the covid-19 page were all from YouTube. Links are provided below:
 
