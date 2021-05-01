@@ -1,4 +1,5 @@
 // sidenav functions
+// For this code I had help from https://www.w3schools.com/howto/howto_js_sidenav.asp
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
@@ -44,7 +45,7 @@ $(document).ready(function () {
     }
 });
  
-//faqs section toggle
+//faqs section toggle - I had help from https://www.jqueryscript.net/accordion/Simple-Smooth-FAQ-Accordion-with-jQuery-CSS-FAQ-Slider.html to write this code
 
   var action = 'click';
   var speed = "500";
@@ -74,7 +75,7 @@ $(document).ready(function () {
     });
   });
 
-// function checking if string is empty to use with form 
+// function checking if string is empty to use with form which I used from https://stackoverflow.com/questions/154059/how-can-i-check-for-an-empty-undefined-null-string-in-javascript
 
 String.prototype.isEmpty = function() {
     return (this.length === 0 || !this.trim());

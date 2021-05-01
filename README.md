@@ -392,6 +392,42 @@ There were no errors for either map.js or script.js
 
 ![script.js](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/script-js.png)
 
+Lighthouse
+
+I used inspect on google chrome to use the Lighthouse tool to check the performance of my web pages. The performance results were all either 99 or 100. Below are the results for each webpage.
+
+![lighthouse-home](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/lighthouse-home.png)
+
+![lighthouse-findus](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/lighthouse-findus.png)
+
+![lighthouse-covid](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/lighthouse-covid.png)
+
+![lighthouse-faqs](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/lighthouse-faqs.png)
+
+![lighthouse-contact](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/lighthouse-contact.png)
+
+Bugs 
+
+1. When implementing a side nav onto the pages, when opening and closing the nav, the text was collapsing which failed to give a smooth transition.
+
+•	To fix it I had to create a class then use css to hide this, which could then be shown using javascript.
+
+•	I also set a timeout function in javascript to give it a smoother transition.
+
+•	The Javascript code is shown below:
+
+![sidemenu-bug](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/side-bug.png)
+
+2. When submitting the contact form on the contact us page, the form was allowing a submission if only white space was entered.
+
+•	To fix it I used an isEmpty function, then added an if statement to check if this function was false. If it was true, an alert would show to to let the user know that the input was invalid.
+
+•	The code used is shown below:
+
+![bug-empty-string](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/bug-empty.png)
+
+![bug-alert](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/bug-alert.png)
+
 Aim
 
 •	As a First Time Visitor, I want to know exactly what services I am able to access. 
