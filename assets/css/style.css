@@ -273,12 +273,16 @@ color:  rgb(0, 79, 182);
 
 .show-me-1, .show-me-2, .show-me-3, .show-me-4 {
     display : none;
-    height: 230px;
+    height: 231px;
     vertical-align: center;
     padding-top: 40px;
     font-size: medium;
     font-weight: bold;
     text-align: center;
+}
+
+.placehold-1, .placehold-2, .placehold-3, .placehold-4{
+    margin-left: 7%;
 }
 
 .step-title {
