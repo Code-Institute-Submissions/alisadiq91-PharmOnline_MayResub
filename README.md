@@ -542,7 +542,15 @@ Deployment
 
 I used GitPod to write my code.
 
-I regularly used Git Push to deploy this page to GitHub. Whenever I completed a page, fixed an error, or finished coding for the day, I would git commit and then git push.
+I regularly used Git Push to deploy this page to GitHub. Whenever I completed a page, fixed an error, or finished coding for the day, I would:
+
+    1. git status - this shows me a list of what has been edited.
+
+    2. git add . - to add what has been edited ready to commit.
+
+    3. git commit -m - this commits what was added ready to push.
+
+    4. git push - this deployed the changes above to the live site.
 
 I used the information in this webpage to create my GitHub pages site. [Link](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/creating-a-github-pages-site)
 
@@ -559,6 +567,26 @@ The link above gave me the following steps.
 5.	The page will automatically refresh.
 
 6.	Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+
+How to run this project locally
+
+To clone this project:
+
+1. Follow this link to the [Project GitHub repository](https://github.com/alisadiq91/PharmOnline)
+
+2. Under the repository name, click "Clone or download".
+
+3. In the Clone with HTTPs section, copy the clone URL for the repository.
+
+4. In your local IDE open GIT Bash.
+
+5. Change the current working directory location where you want the cloned directory to be made.
+
+6. Type git clone, and then paste the URL you copied in Step 3.
+
+7. Press Enter. Your local clone will be created.
+
+
 
 Content
 
