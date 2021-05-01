@@ -74,6 +74,12 @@ $(document).ready(function () {
     });
   });
 
+// function checking if string is empty to use with form 
+
+String.prototype.isEmpty = function() {
+    return (this.length === 0 || !this.trim());
+};
+
 //alert for contact us form submission 
 
  function showAlert(){
@@ -89,9 +95,9 @@ function sendEmail() {
     var name = document.getElementById("fromName").value;
 	  var email = document.getElementById("fromEmail").value;
 	  var message = document.getElementById("message").value;
-	  if (name.length > 0){
-		if (email.length > 0){
-		  if (message.length > 0){
+	  if (name.isEmpty() == false){
+		if (email.isEmpty() == false){
+		  if (message.isEmpty() == false){
 				 var contactForm ={
 					  from_name: name,
 					  from_email: email,
@@ -106,8 +112,16 @@ function sendEmail() {
 					  document.getElementById("fromEmail").value = '';
 					  document.getElementById("message").value = '';
 				  });
+            }
+            else{
+            alert("Invalid content entered. Fields can not be empty or only whitespace");
+            }
+        }
+        else{
+        alert("Invalid content entered. Fields can not be empty or only whitespace");
+        }
+      }
+    else{
+    alert("Invalid content entered. Fields can not be empty or only whitespace");
+    }
 }
-
-}
-	  }
-  }

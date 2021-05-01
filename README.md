@@ -1,4 +1,4 @@
-
+![logo](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/logo.png)
 
 Ali Sadiq MS2 – Pharm Online
 
@@ -50,7 +50,9 @@ Typography
 
 --- WIREFRAMES AND FEATURES ---
 
-Header – languages used – HTML, CSS, Font Awesome https://fontawesome.com/, Bootstrap
+Header – languages used – HTML, CSS, Javascript
+
+Frameworks, Libraries & Programs Used - [Font Awesome](https://fontawesome.com/), Bootstrap
 
 Features:
 
@@ -73,7 +75,9 @@ Features to implement :
 
 ![sidemenu-desktop](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/sidemenu-desktop.png)
 
-Footer – languages used – HTML, CSS, fontawesome (https://fontawesome.com/)
+Footer – languages used – HTML, CSS
+
+Frameworks, Libraries & Programs Used - [Font Awesome](https://fontawesome.com/), Bootstrap
 
 Features:
 
@@ -87,7 +91,9 @@ Features:
 
 Home page – 
 
-Languages used – HTML, CSS, Javascript using JQuery, font awesome https://fontawesome.com/), Bootstrap
+Languages used – HTML, CSS, Javascript using JQuery
+
+Frameworks, Libraries & Programs Used - [Font Awesome](https://fontawesome.com/), Bootstrap
 
 Home page wireframe (desktop)
 
@@ -124,6 +130,8 @@ Mobile View –
 ![home-page-mobile](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/home-mobile.jpg)
 
 Find us page – languages used – HTML, CSS, Javascript
+
+Frameworks, Libraries & Programs Used - Bootstrap, EmailJS, [Font Awesome](https://fontawesome.com/)
 
 Find us page desktop wireframe.
 
@@ -165,22 +173,34 @@ Features
 
 ![map-form-alert](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/form-map-alert.png)
 
-8. The submit button is “btn-primary” (https://getbootstrap.com/docs/4.0/components/buttons/) button from bootstrap as the colour matches the theme used in the website.
+8. The submit button is [btn-primary](https://getbootstrap.com/docs/4.0/components/buttons/) button from bootstrap as the colour matches the theme used in the website.
 
 9. Using EmailJS, the business is now sent this request by email in the format shown below. If the user selects the Other option, the text they type in is shown under additional info.
 
 ![map-emailjs](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-emailjs.png)
 
--------------   10. Each field is set to required and the email must be submitted in the correct format. ------------------
+10. The service selected and the email  are set to required and must be submitted in the correct format.
 
-11. The EmailJS is set to send a copy of the email to the user for test purposes.
+![map-form-option](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-option.png)
 
-12. The page is set to respond to smaller devices by having the branch address on top of the form instead of side by side.
+![map-form-email](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-email.png)
+
+11. I had to set the date and other text box as required using Javascript as they should only be required depending on which service is selected.
+
+![map-form-date](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-date.png)
+
+![map-form-other](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-other.png)
+
+12. The EmailJS is set to send a copy of the email to the user for test purposes.
+
+13. The page is set to respond to smaller devices by having the branch address on top of the form instead of side by side.
 
 ![map-form-mobile](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-mobile.png)
 
 
-Covid19 page – languages used – HTML, CSS, font awesome 
+Covid19 page – languages used – HTML, CSS
+
+Frameworks, Libraries & Programs Used - Bootstrap, [Font Awesome](https://fontawesome.com/)
 
 Covid19 page wireframe desktop
 
@@ -202,7 +222,9 @@ Image shows the mobile page for the covid-19 page:
 
 ![covid-mobile](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/covid-mobile.jpg)
 
-FAQ page – languages used – HTML, CSS, Javascript using JQuery, fontawesome https://fontawesome.com/)
+FAQ page – languages used – HTML, CSS, Javascript using JQuery
+
+Frameworks, Libraries & Programs Used - Bootstrap, [Font Awesome](https://fontawesome.com/)
 
 FAQ page wireframe (desktop)
 
@@ -232,7 +254,9 @@ Mobile View –
 
 ![faq-answers-mobile](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/faq-answers-mobile.jpg)
 
-Contact us page – languages used – HTML, CSS, Javascript, EmailJS, font awesome, bootstrap
+Contact us page – languages used – HTML, CSS, Javascript
+
+Frameworks, Libraries & Programs Used - Bootstrap, EmailJS, [Font Awesome](https://fontawesome.com/)
 
 Contact us page wireframe (desktop)
 
@@ -254,17 +278,21 @@ Features
 
 ![contactus-required-email](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/contactus-emailreq.png)
 
-3.	The message box is larger than the other input fields to give the user more space to write a detailed message.
+3. The Full Name and Message fields are where I have used Javascript to ensure that not just white spaces are entered into the fields.
 
-4.	The submit button is “btn-primary” (https://getbootstrap.com/docs/4.0/components/buttons/) button from bootstrap as the colour matches the theme used in the website. 
+![contactus-invalid-entry](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/contact-us-invalid.png)
 
-5.	Once the submit button is pressed, the user will receive an alert thanking them for submitting a message and that usually the company replies within 2 working days.
+4.	The message box is larger than the other input fields to give the user more space to write a detailed message.
+
+5.	The submit button is [btn-primary](https://getbootstrap.com/docs/4.0/components/buttons/) button from bootstrap as the colour matches the theme used in the website. 
+
+6.	Once the submit button is pressed, the user will receive an alert thanking them for submitting a message and that usually the company replies within 2 working days.
 
 ![form-alert](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/form-alert.png)
 
-6.	Once submitted, the fields automatically reset. 
+7.	Once submitted, the fields automatically reset. 
 
-7.	I used Javascript to use emailJs so that any questions or messages submitted can be seen by the company on their email address. This is currently set up to my email address. I have also set the email template to send a copy of the email to the sender so anyone using the form can be sure it has sent. The message is shown in the format below:
+8.	I used Javascript to use emailJs so that any questions or messages submitted can be seen by the company on their email address. This is currently set up to my email address. I have also set the email template to send a copy of the email to the sender so anyone using the form can be sure it has sent. The message is shown in the format below:
 
 ![email-example](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/emailJS.png)
 
@@ -280,7 +308,7 @@ Languages Used
 
 •	HTML5
 
-• CSS3 
+•   CSS3 
 
 •	Javascript
 
@@ -304,7 +332,7 @@ o Font Awesome was used in the header and footer on each page, with social media
 
 5.	EmailJS
 
-•	EmailJS was used to link the form on the contact us page to my email. I am now able to see any messages sent to the pharmacy. In the future, of course the pharmacy would have their own email and be able to access these messages through there. 
+•	EmailJS was used to link the form on the contact us page and find us page to my email. I am now able to see any messages and service requests sent to the pharmacy. In the future, of course the pharmacy would have their own email and be able to access these messages through there. 
 
 6.	Git
 
@@ -356,14 +384,13 @@ There were 2 errors but these were with the bootstrap model. The warnings were a
 
 JS errors 
 
-I used https://jshint.com/ to check my Javascript code for errors.
+I used [JSHint](https://jshint.com/) to check my Javascript code for errors.
 
 There were no errors for either map.js or script.js
 
 ![map.js](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-js.png)
 
 ![script.js](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/script-js.png)
-
 
 Aim
 
@@ -481,7 +508,7 @@ I used GitPod to write my code.
 
 I regularly used Git Push to deploy this page to GitHub. Whenever I completed a page, fixed an error, or finished coding for the day, I would git commit and then git push.
 
-I used the information in this webpage to create my GitHub pages site. https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/creating-a-github-pages-site
+I used the information in this webpage to create my GitHub pages site. [Link](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/creating-a-github-pages-site)
 
 The link above gave me the following steps.
 
@@ -501,51 +528,51 @@ Content
 
 All content was written by the coder apart form those listed below.
 
-FAQ page - I had help from this link writing the JQuery for my FAQ page. https://www.jqueryscript.net/accordion/Simple-Smooth-FAQ-Accordion-with-jQuery-CSS-FAQ-Slider.html
+FAQ page - I had help from this link writing the JQuery for my FAQ page. [Link](https://www.jqueryscript.net/accordion/Simple-Smooth-FAQ-Accordion-with-jQuery-CSS-FAQ-Slider.html)
 
-Contact Form – I used the integration function on the email JS website to add a link to my profile. https://dashboard.emailjs.com/admin/integration/browser
+Contact Form – I used the integration function on the email JS website to add a link to my profile. [Link](https://dashboard.emailjs.com/admin/integration/browser)
 
-Side Menu - I had help from this link when writing the code for my side menu. https://www.w3schools.com/howto/howto_js_sidenav.asp
+Side Menu - I had help from this link when writing the code for my side menu. [Link](https://www.w3schools.com/howto/howto_js_sidenav.asp)
 
-Find us page - My Tutor Antonio Rodriguez helped me with these parts of my code:
+My Tutor Antonio Rodriguez helped me with these parts of my code:
 
     1. To have only 1 branch show if one is clicked after another on google maps.
     
     2. To have only the required sections of the find us page form show if different options are clicked one after the other. 
 
+    3. On the contact form - how to not allow white spaces to be submitted using Javascript.
+
 Media
 
 I obtained all my images from google images. Here are the links for each image:
 
-Main image on home page  – https://image.freepik.com/free-photo/happy-customer-holding-her-medicine_13339-298059.jpg
+[Main image on home page](https://image.freepik.com/free-photo/happy-customer-holding-her-medicine_13339-298059.jpg)
 
-Providing NHS services – https://s3.amazonaws.com/gpandme/img/nhs-logo.png
+[Providing NHS services](https://s3.amazonaws.com/gpandme/img/nhs-logo.png)
 
-NHS logo - https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/NHS-Logo.svg/371px-NHS-Logo.svg.png
+[Apple store](https://miro.medium.com/max/1146/1*POlwgD8liUYUqiEU6IU1Pw.png)
 
-Apple store - https://miro.medium.com/max/1146/1*POlwgD8liUYUqiEU6IU1Pw.png
+[Google play store](https://talkhomeapp.com/imgs/icons/download_app_google_play.svg?v=HixK2eXSbwMfMxlyhS4m2OQZwsQDFa5wG1dz9QInL28)
 
-Google play store- https://talkhomeapp.com/imgs/icons/download_app_google_play.svg?v=HixK2eXSbwMfMxlyhS4m2OQZwsQDFa5wG1dz9QInL28
+[Carousel Icons](http://www.w3.org/2000/svg)
 
-Carousel Icons - http://www.w3.org/2000/svg
+[Step 1](https://4d0q7u11k31p1qnkosal8q2e-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/pexels-photo-1083931-720x460.jpeg)
 
-Step 1 - https://4d0q7u11k31p1qnkosal8q2e-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/pexels-photo-1083931-720x460.jpeg
+[Step 2](https://nursingnotes.co.uk/wp-content/uploads/2019/01/Medication.jpeg)
 
-Step 2 - https://nursingnotes.co.uk/wp-content/uploads/2019/01/Medication.jpeg
+[Step 3](https://cuencahighlife.com/wp-content/uploads/2020/02/new-haven-ct-waterbury-pharmacy-body1.jpg)
 
-Step 3 - https://cuencahighlife.com/wp-content/uploads/2020/02/new-haven-ct-waterbury-pharmacy-body1.jpg
+[Step 4](https://images.ctfassets.net/nqqfspfdquz1/3ZL84FFcohI25vIZLSlLcd/7d0e0606f61c372e6e9d40ef57aa3906/Coop_Health_Free_repeat_prescription_delivery_service.jpg?fm=webp&q=60&w=600&h=338)
 
-Step 4 - https://images.ctfassets.net/nqqfspfdquz1/3ZL84FFcohI25vIZLSlLcd/7d0e0606f61c372e6e9d40ef57aa3906/Coop_Health_Free_repeat_prescription_delivery_service.jpg?fm=webp&q=60&w=600&h=338
-
-Map marker - https://maps.google.com/mapfiles/ms/icons/hospitals.png
+[Map marker](https://maps.google.com/mapfiles/ms/icons/hospitals.png)
 
 The embedded videos on the covid-19 page were all from YouTube. Links are provided below:
 
-Stay at home -  – https://www.youtube.com/embed/smIPGxbHojE
+[Stay at home](https://www.youtube.com/embed/smIPGxbHojE)
 
-Wash your hands -  – https://www.youtube.com/embed/4ij1I0OB2hk
+[Wash your hands](https://www.youtube.com/embed/4ij1I0OB2hk)
 
-Keep your distance - https://www.youtube.com/embed/wPM58DQH0gQ
+[Keep your distance](https://www.youtube.com/embed/wPM58DQH0gQ)
 
 Acknowledgements
 

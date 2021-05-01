@@ -84,6 +84,13 @@ function myOptions(optionSelect)
             el.style.display = "none";
         });
         document.getElementById(showDivId).style.display = "block";
+        document.getElementById("date").required = true;
+        document.getElementById("otherBox").required = false;
+
+        if(showDivId == "otherBox"){
+            document.getElementById("date").required = false;
+            document.getElementById("otherBox").required = true;
+        }
 }}
 
 // email submission for branch form
@@ -100,12 +107,12 @@ function myOptions(optionSelect)
 
 function sendEmailMap() {
 
-    var branch = selectedBranch;
-    var service = document.getElementById("serviceSelected").value;
+      var branch = selectedBranch;
+      var service = document.getElementById("serviceSelected").value;
 	  var email = document.getElementById("fromEmailMap").value;
       var otherMessage = document.getElementById("otherBox").value;
       var date = document.getElementById("date").value;
-      
+        
 	  
 				 var mapEmail ={
                       branchChoice: branch,
