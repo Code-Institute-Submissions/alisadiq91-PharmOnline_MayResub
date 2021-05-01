@@ -12,7 +12,7 @@ var map = new google.maps.Map(document.getElementById("map"), locations);
 
 var infoWindow = null;
 
-let pharmacies = [
+var pharmacies = [
 {name:"Leeds",divid:"leeds",content:'<div class="map-click"><h4>Leeds</h4></div>',coordinates:{lat:53.8013853,lng:-1.5643944}},
 {name:"Bradford",divid:"bradford",content:'<div class="map-click"><h4>Bradford</h4></div>',coordinates:{lat:53.7960,lng:-1.7594}},
 {name:"Manchester",divid:"manchester",content:'<div class="map-click"><h4>Manchester</h4></div>',coordinates:{lat:53.4668,lng:-2.2339}},
@@ -23,9 +23,9 @@ let pharmacies = [
 {name:"Newcastle",divid:"newcastle",content:'<div class="map-click"><h4>Newcastle</h4></div>',coordinates:{lat:54.9791,lng:-1.6146}},
 {name:"Nottingham",divid:"nottingham",content:'<div class="map-click"><h4>Nottingham</h4></div>',coordinates:{lat:52.9397,lng:-1.1928}},
 {name:"Liverpool",divid:"liverpool",content:'<div class="map-click"><h4>Liverpool</h4></div>',coordinates:{lat:53.4047,lng:-2.9653}},
-]
+];
 
-for (let i = 0; i < pharmacies.length; i++) {
+for (var i = 0; i < pharmacies.length; i++) {
     addPharmacy(pharmacies[i]);
 }
 
@@ -128,7 +128,4 @@ function sendEmailMap() {
                       
 				  });
 }
-
-
-	  
   

@@ -95,7 +95,7 @@
 
                     <!-- drop down list to select which service the patient requires -->  
                     <label for="serviceSelected">Which service do you require?</label>
-                    <select class="form-control" id="serviceSelected" onchange="myOptions(this)">
+                    <select class="form-control" id="serviceSelected" onchange="myOptions(this)" required>
                         <option value="" disabled selected>Select your option</option>
                         <option value="covid-test" id="covid" data-div-id="dateService">Covid Testing</option>
                         <option value="travel-vaccination" data-div-id="dateService" id="travel">Travel Vaccinations</option>
@@ -116,7 +116,7 @@
                 </div>
                 <div class="form-group">
                     <label for="fromEmailMap">Email address</label>
-                    <input type="email" class="form-control" id="fromEmailMap" aria-describedby="emailHelp" placeholder="Enter email">
+                    <input type="email" class="form-control" id="fromEmailMap" aria-describedby="emailHelp" placeholder="Enter email" required>
                     <small id="emailHelp" class="form-text text-muted">This is so we can confirm an appointment with you. We'll never share your email with anyone else.</small>
                 </div>
                     <button type="submit" class="btn btn-primary">Submit</button>

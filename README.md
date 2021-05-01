@@ -17,7 +17,9 @@ The website is for the company Pharm Online. They are an online Pharmacy which a
 
 3.	As a First Time Visitor, I want to be able to know exactly how I can contact the pharmacies, be it online or at their stores. 
 
-4.	As a First Time Visitor, I want to know where each pharmacy is based to see if there is one close to where I live. 
+4.	As a First Time Visitor, I want to know where each pharmacy is based to see if there is one close to where I live.
+
+5.  As a First Time Visitor, I want to be able to choose a service and make an appointment at my chosen branch.
 
 • Returning Visitor Goals
 
@@ -29,7 +31,9 @@ The website is for the company Pharm Online. They are an online Pharmacy which a
 
 • Frequent User Goals
 
-1.	As a Frequent User, I want to check to see if there are any new services available at each store. 
+1.	As a Frequent User, I want to check to see if there are any new services available at each store.
+
+2.  As a Frequent User, I want to be able to book other services at the same branch. 
 
 Being a registered UK pharmacist myself, I have visited many pharmacy websites and apps, and of course worked in many branches.
 With me being vastly experienced in this sector, I know exactly what the consumer wants, making it easy for me to provide this in a simple way.
@@ -46,17 +50,19 @@ Typography
 
 --- WIREFRAMES AND FEATURES ---
 
-Header – languages used – HTML, CSS, Font Awesome https://fontawesome.com/
+Header – languages used – HTML, CSS, Font Awesome https://fontawesome.com/, Bootstrap
 
 Features:
 
-1.	The logo – this is of course in the header, so it is on every page. It is always at the top of the header, above the navbar. 
+1.	The logo – this is of course in the header, so it is on every page. It is at the top on desktop devices but just below the menu on smaller devices.  
 
-2.	Nav Bar – I used bootstrap (https://getbootstrap.com/docs/4.5/components/navbar/) for this, for efficiency. Each button on the nav bar has a hover effect. These are all places under the logo evenly spaced out.
+2.	Side Menu – I created a pop-out side menu to give interactivity to the site and to help the design on mobile devices as the nav links would take up a large space of the page if the side menu was not created.
 
-3.	In desktop view, there is an NHS logo in the top right to show that NHS services are provided, this is not shown in mobile view as it is also shown below.
+3.	In mobile view, the "Menu" is above the logo so the user can easily scroll to the top and find it there.
 
-4.	In mobile view, the nav links each have their own line to keep it simple and organised. 
+4.  Each nav link has an icon from font awesome and changes colour when hovering.
+
+5.  The side menu background colour is slightly darker than the background of the website so that it stands out once opened. 
 
 
 Features to implement :
@@ -64,6 +70,8 @@ Features to implement :
 1.	I wanted to add a register link in my header, and to link this to a register page. This page would allow the user the option to use our facilities on the website too as opposed to just the app. This is something that I will be able to do later in my developing career. 
 
 ![header-desktop](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/header-desktop.png)
+
+![sidemenu-desktop](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/sidemenu-desktop.png)
 
 Footer – languages used – HTML, CSS, fontawesome (https://fontawesome.com/)
 
@@ -79,7 +87,7 @@ Features:
 
 Home page – 
 
-Languages used – HTML, CSS, Javascript using JQuery, font awesome https://fontawesome.com/)
+Languages used – HTML, CSS, Javascript using JQuery, font awesome https://fontawesome.com/), Bootstrap
 
 Home page wireframe (desktop)
 
@@ -99,7 +107,7 @@ Features
 
 ![main-page-desktop](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/main-page-desktop.png)
 
-4.	Steps of how it works – The homepage should have a simple way for the customer to know what they need to do once they download the app.  There are 4 steps to the process, each is initially shown as an image, with a caption underneath. When the user hovers (clicks on mobile) over each image it will reveal a more detailed description of exactly what they need to do for this step. This is done using Javascript with Jquery. In mobile view, these steps are each on their own line. 
+4.	Steps of how it works – Originally I planned to have these steps as all showing and the user to hover to reveal more information. I decided to change this and add bootstrap carousel to improve the interactivity for the user. This gives the website a cleaner and simpler look. There are 4 steps, each shown as an image with a caption. When this is hovered over (clicked on mobile/tablet), a more detailed description of this step is revealed to the user. This was done using Javascript with JQuery.
 
 ![steps-desktop](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/steps-desktop.png)
 
@@ -131,7 +139,7 @@ Find us page screenshot.
 
 Find us page mobile screenshot.
 
-![findus-mobile](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/findus-mobile.png)
+![findus-mobile](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/find-us-mobile.jpg)
 
 Features
 
@@ -139,13 +147,37 @@ Features
 
 2.	Map – I used the google map API to incorporate a map and the location of the stores. This gives the user the chance to zoom in on each location and find out exactly where they are. Each location has been given a custom marker, an image universally used as health or pharmacy. When the user clicks the marker, a window pops up with the name of the pharmacy. 
 
-3.	When each marker on the map is clicked. The branch is highlighted below to show the user which branch they have clicked on. When each marker is clicked, it only highlights the branch the user has clicked, even after a different branch is clicked.
+3.	When the user clicks a marker, the branch details pop up below with a form for the user to fill out related to what service they require.
+
+4. Above the form, the user is told what branch they have selected, to make sure they are happy with their choice.
 
 ![map-popup-window](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-popup.png)
 
-4. List of branches – Underneath the map is a list of the 4 branches in the UK. If the user wants to quickly see the locations without using the map. 
+5. The user now chooses which service they require from the drop down list. If a service is chosen, another input field appears asking the customer what date they would like to book their appointment.
 
-5. In mobile view - the branches are each on their own line
+![form-date](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/form-date.png)
+
+6. If the user chooses the option "Other", instead of an input field for the date, an text box appears for the user to type what service they require from the chosen branch.
+
+![form-other](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/form-other.png)
+
+7. When the form is submitted, an alert box appears telling the customer that the branch will be in touch with them regarding their appointment.
+
+![map-form-alert](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/form-map-alert.png)
+
+8. The submit button is “btn-primary” (https://getbootstrap.com/docs/4.0/components/buttons/) button from bootstrap as the colour matches the theme used in the website.
+
+9. Using EmailJS, the business is now sent this request by email in the format shown below. If the user selects the Other option, the text they type in is shown under additional info.
+
+![map-emailjs](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-emailjs.png)
+
+-------------   10. Each field is set to required and the email must be submitted in the correct format. ------------------
+
+11. The EmailJS is set to send a copy of the email to the user for test purposes.
+
+12. The page is set to respond to smaller devices by having the branch address on top of the form instead of side by side.
+
+![map-form-mobile](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-mobile.png)
 
 
 Covid19 page – languages used – HTML, CSS, font awesome 
@@ -160,7 +192,7 @@ Covid19 page wireframe mobile
 
 Features
 
-2.	This is a very simple page, with Covid-19 being a huge part of peoples lives at present, it is very important for a website providing healthcare to include some advice on how to stay safe. The page includes the 3 ways to stay safe advised by the UK government, with a video embedded to go along with each piece of advice. I have also added a font awesome logo to each point. 
+2.	This is a very simple page, with Covid-19 being a huge part of peoples lives at present, it is expected that a website providing healthcare to include some advice on how to stay safe. The page includes the 3 ways to stay safe advised by the UK government, with a video embedded to go along with each piece of advice. I have also added a font awesome logo to each point. 
 
 Covid19 page desktop 
 
@@ -288,31 +320,31 @@ HTML VALIDATOR
 
 Home page 
 
-No errors were found.
+No errors or warnings were found.
 
 ![html-validator-index](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/html-index.png)
 
 Find us page
 
-No errors were found.
+No errors or warnings were found.
 
 ![html-validator-findus](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/html-findus.png)
 
 Covid page
 
-No errors were found. 
+No errors or warnings were found.
 
 ![html-validator-covid](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/html-covid.png)
 
 FAQs page
 
-No errors were found.
+No errors or warnings were found.
 
 ![html-validator-faqs](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/html-faqs.png)
 
 Contact us page
 
-No errors were found. 
+No errors or warnings were found. 
 
 ![html-validator-contact](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/html-contact.png)
 
