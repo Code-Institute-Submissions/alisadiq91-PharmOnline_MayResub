@@ -76,7 +76,7 @@ String.prototype.isEmpty = function() {
 
  function showAlert(){
       alert("Thank you for contacting us!\nWe aim to reply to all queries within 2 working days.");
-  }
+ }
 
 
 
@@ -95,7 +95,7 @@ function sendEmail() {
 					  from_email: email,
 					  message: message,
 				  };
-
+                // emailJs key
                   emailjs.send("service_liljt1y","template_e2wnhxl",contactForm)
 				  .then(function(response){
 					  console.log("success", response.status);

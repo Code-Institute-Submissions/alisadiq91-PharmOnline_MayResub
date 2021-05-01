@@ -28,6 +28,8 @@ var pharmacies = [
 {name:"Liverpool",divid:"liverpool",content:'<div class="map-click"><h4>Liverpool</h4></div>',coordinates:{lat:53.4047,lng:-2.9653}},
 ];
 
+//for loop to iterate through pharmacies
+
 for (var i = 0; i < pharmacies.length; i++) {
     addPharmacy(pharmacies[i]);
 }
@@ -87,6 +89,7 @@ function myOptions(optionSelect)
             el.style.display = "none";
         });
         document.getElementById(showDivId).style.display = "block";
+        //code to have only the correct id shown when clicked
         document.getElementById("date").required = true;
         document.getElementById("otherBox").required = false;
 
@@ -94,7 +97,8 @@ function myOptions(optionSelect)
             document.getElementById("date").required = false;
             document.getElementById("otherBox").required = true;
         }
-}}
+    }   
+}
 
 // email submission for branch form
 
@@ -121,9 +125,9 @@ function sendEmailMap() {
 					  fromEmailMap: email,
                       otherBox: otherMessage,
 					  date: date,
-                      
-				  };
+                 };
 
+                    // emailJs key 
                   emailjs.send("service_mc16uvn","template_hsw25dm", mapEmail)
 				  .then(function(response){
 					  console.log("success", response.status);
