@@ -5,7 +5,7 @@
 [View the live project here.](https://alisadiq91.github.io/PharmOnline/index.html)
 
 This is the second project of my software development career. I have decided to create a website for a chain of pharmacies that have decided to delve into the world of online pharmacy. The company name has changed to PharmOnline because of this. I will be using what I have learnt from my recent modules covering JavaScript and Jquery, as well as how to include an API in a website. I will also use HTML, CSS and the bootstrap framework. I am attempting to show a vast range of what I have learnt, including EmailJS, incorporating APIs and using JavaScript to monitor how a user interacts with the website. 
-The website is for the company Pharm Online. They are an online Pharmacy which also have 4 stores across the UK.  They currently have a site in Leeds, Bradford, York and Manchester, which each offer a range of services. They also have a mobile app which is used for online ordering of medication. 
+The website is for the company Pharm Online. They are an online Pharmacy which also have 10 stores across the UK.  Their stores each offer a wide range of services, from covid testing to blood pressure checks. They also have a mobile app which is used for online ordering of medication. 
 
 # **UX - USER STORIES**
 
@@ -36,7 +36,7 @@ The website is for the company Pharm Online. They are an online Pharmacy which a
 2.  As a Frequent User, I want to be able to book other services at the same branch. 
 
 Being a registered UK pharmacist myself, I have visited many pharmacy websites and apps, and of course worked in many branches.
-With me being vastly experienced in this sector, I know exactly what the consumer wants, making it easy for me to provide this in a simple way.
+With me being vastly experienced in this sector, I know exactly what the user wants, making it easy for me to provide this in a simple way.
 
 # **DESIGN**
 
@@ -58,11 +58,11 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 ## Features:
 
-1.	The logo – this is of course in the header, so it is on every page. It is at the top on desktop devices but just below the menu on smaller devices.  
+1.	The logo – this is of course in the header, so it is on every page. It is at the top on desktop devices and just below the menu on smaller devices.  
 
-2.	Side Menu – I created a pop-out side menu to give interactivity to the site and to help the design on mobile devices as the nav links would take up a large space of the page if the side menu was not created.
+2.	Side Menu – I created a pop-out side menu to give interactivity to the site and to help the design on mobile devices as the nav links would take up a large area of the page if the side menu was not created. Originally, I had the idea to have the navbar underneath the logo as a list but to improve interactivity I changed to a side menu.
 
-3.	In mobile view, the "Menu" is above the logo so the user can easily scroll to the top and find it there.
+3.	In mobile view, the Menu (to click to open the side menu) is above the logo so the user can easily scroll to the top and find it there.
 
 4.  Each nav link has an icon from font awesome and changes colour when hovering.
 
@@ -71,7 +71,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 ## Features to implement:
 
-1.	I wanted to add a register link in my header, and to link this to a register page. This page would allow the user the option to use our facilities on the website too as opposed to just the app. This is something that I will be able to do later in my developing career. 
+1.	I wanted to add a register link in my header, and to link this to a register page. This page would allow the user the option to use our online ordering service on the website too as opposed to just the app. This is something that I will be able to do later in my developing career. 
 
 ![header-desktop](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/header-desktop.png)
 
@@ -85,9 +85,9 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 ## Features:
 
-1.	Contact us – here is a link with a hover effect to the contact us page. As well as opening times and a phone number for general enquiries. This number has a link to the user’s phone app. 
+1.	Contact us – here is a link with a hover effect to the contact us page. As well as opening times and a phone number for head office for general enquiries. This number has a link to the user’s phone app. 
 
-2.	Download the app – in the middle is a link to the apple store and the google play store for users to download the companies app. 
+2.	Download the app – in the middle is a link to the apple store and the google play store for users to download the companies app so they can order their medication.
 
 3.	Follow – each page must contain links to the business’s social platforms, with a hover effect too.
 
@@ -109,15 +109,15 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 ## Features
 
-1.	Main image – An eye-catching picture, showing a happy patient receiving their medication. Also, with pharmacists behind with happy expressions. I want to show the consumer a satisfied customer.
+1.	Main image - An eye-catching picture, showing a happy patient receiving their medication. Also, with pharmacists behind with happy expressions. I want to show the user a satisfied customer.
 
-2.	Providing services image – Here is an image showing the pharmacy provides services by the NHS, this is a widely used logo. 
+2.	Providing services image - Here is an image showing the pharmacy provides services by the NHS, this is a widely used logo. This image will give the user confidence that the company follows NHS guidelines.
 
-3.	Main list – I want the customer to know exactly what is available to them. Here is a list of points of what they can expect to experience, re-iterating the word “free” where possible. Underneath this are again, links to the google play store and apple store to download the app. 
+3.	Main list - I want the customer to know exactly what is available to them. Here is a list of points of what they can expect to experience, re-iterating the word “free” where possible. Underneath this are again, links to the google play store and apple store to download the app. 
 
 ![main-page-desktop](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/main-page-desktop.png)
 
-4.	Steps of how it works – Originally, I planned to have these steps as all showing and the user to hover to reveal more information. I decided to change this and add bootstrap carousel to improve the interactivity for the user. This gives the website a cleaner and simpler look. There are 4 steps, each shown as an image with a caption. When this is hovered over (clicked on mobile/tablet), a more detailed description of this step is revealed to the user. This was done using JavaScript with JQuery.
+4.	Steps of how it works – Originally, I planned to have these steps as all showing and the user to hover to reveal more information. I decided to change this and add a bootstrap carousel to improve the interactivity for the user. This gives the website a cleaner and simpler look. There are 4 steps, each shown as an image with a caption. When this is hovered over (clicked on mobile/tablet), a more detailed description of this step is revealed to the user. This was done using JavaScript with JQuery.
 
 ![steps-desktop](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/steps-desktop.png)
 
@@ -161,51 +161,53 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 2.	Map – I used the google map API to incorporate a map and the location of the stores. This gives the user the chance to zoom in on each location and find out exactly where they are. Each location has been given a custom marker, an image universally used as health or pharmacy. When the user clicks the marker, a window pops up with the name of the pharmacy. 
 
-3.	When the user clicks a marker, the branch details pop up below with a form for the user to fill out related to what service they require.
+3.  Originally the branches would all be showing underneath the map, however to improve the interactivity for the user, I have hidden them to be shown when the marker is clicked.
 
-4. Above the form, the user is told what branch they have selected, to make sure they are happy with their choice.
+4.	When the user clicks a marker, the branch details pop up below with a form for the user to fill out related to what service they require.
+
+5. Above the form, the user is told what branch they have selected, to make sure they are happy with their choice.
 
 ![map-popup-window](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-popup.png)
 
-5. The user now chooses which service they require from the drop-down list. If a service is chosen, another input field appears asking the customer what date they would like to book their appointment.
+6. The user now chooses which service they require from the drop-down list. If a service is chosen, another input field appears asking the customer what date they would like to book their appointment.
 
 ![form-date](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/form-date.png)
 
-6. If the user chooses the option "Other", instead of an input field for the date, a text box appears for the user to type what service they require from the chosen branch.
+7. If the user chooses the option "Other", instead of an input field for the date, a text box appears for the user to type what service they require from the chosen branch.
 
 ![form-other](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/form-other.png)
 
-7. When the form is submitted, an alert box appears telling the customer that the branch will be in touch with them regarding their appointment.
+8. When the form is submitted, an alert box appears telling the customer that the branch will be in touch with them regarding their appointment.
 
 ![map-form-alert](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/form-map-alert.png)
 
-8. The submit button is [btn-primary](https://getbootstrap.com/docs/4.0/components/buttons/) button from bootstrap as the colour matches the theme used on the website.
+9. The submit button is a [btn-primary](https://getbootstrap.com/docs/4.0/components/buttons/) button from bootstrap as the colour matches the theme used on the website.
 
-9. Using EmailJS, the business is now sent this request by email in the format shown below. If the user selects the Other option, the text they type in is shown under additional info.
+10. Using EmailJS, the business is now sent this request by email in the format shown below. If the user selects the Other option, the text they type in is shown under additional info.
 
 ![map-emailjs](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-emailjs.png)
 
-10. The service selected and the email  are set to required and must be submitted in the correct format.
+11. The service selected and the email  are set to required and must be submitted in the correct format.
 
 ![map-form-option](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-option.png)
 
 ![map-form-email](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-email.png)
 
-11. I had to set the date and other text box as required using JavaScript as they should only be required depending on which service is selected.
+12. I had to set the date and other text box as required using JavaScript as they should only be required depending on which service is selected.
 
 ![map-form-date](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-date.png)
 
 ![map-form-other](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-other.png)
 
-12. I used a function in javascript to detect that a string was entered into the other text box, an alert pops up to the user if only whitespace is entered.
+13. I used a function in javascript to detect that a string was entered into the other text box, an alert pops up to the user if only whitespace is entered.
 
 ![map-form-invalid](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-invalid.png)
 
-13. The EmailJS is set to send a copy of the email to the user for test purposes.
+14. The EmailJS is set to send a copy of the email to the user for test purposes.
 
-14. The page is set to respond to smaller devices by having the branch address on top of the form instead of side by side.
+15. The page is set to respond to smaller devices by having the branch address on top of the form instead of side by side.
 
-![map-form-mobile](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-mobile.png)
+![map-form-mobile](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-mobile.jpg)
 
 
 # **Covid19 page**
@@ -224,7 +226,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 ## Features
 
-1.	This is a very simple page, with Covid-19 being a huge part of people's lives at present, it is expected that a website providing healthcare to include some advice on how to stay safe. The page includes the 3 ways to stay safe advised by the UK government, with a video embedded to go along with each piece of advice. I have also added a font awesome logo to each point. 
+1.	This is a very simple page. With Covid-19 being a huge part of people's lives at present, it is expected that a website providing healthcare must include some advice on how to stay safe. The page includes the 3 ways to stay safe advised by the UK government, with a video embedded to go along with each piece of advice. I have also added a font awesome logo to each point. 
 
 #### **Covid19 page desktop** 
 
@@ -284,7 +286,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 ## Features
 
-1.	This page contains a simple form that allows the user to send a message to the company. It only asks for their name and email address, and the message they would like to pass on.
+1.	This page contains a simple form that allows the user to send a message to the company. It only asks for their name, email address, and the message they would like to send.
 
 ![contactus-desktop](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/contactus-desktop.png)
 
@@ -294,13 +296,13 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 ![contactus-required-email](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/contactus-emailreq.png)
 
-3. The Full Name and Message fields are where I have used JavaScript to ensure that not just white spaces are entered into the fields.
+3. The Full Name and Message fields are where I have used JavaScript to ensure that not just white spaces are entered into the fields. If this occurs, the alert below is shown to the user.
 
 ![contactus-invalid-entry](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/contact-us-invalid.png)
 
 4.	The message box is larger than the other input fields to give the user more space to write a detailed message.
 
-5.	The submit button is [btn-primary](https://getbootstrap.com/docs/4.0/components/buttons/) button from bootstrap as the colour matches the theme used on the website. 
+5.	The submit button is a [btn-primary](https://getbootstrap.com/docs/4.0/components/buttons/) button from bootstrap as the colour matches the theme used on the website. 
 
 6.	Once the submit button is pressed, the user will receive an alert thanking them for submitting a message and that usually the company replies within 2 working days.
 
@@ -412,14 +414,19 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 * I used inspect on google chrome to use the Lighthouse tool to check the performance of my web pages. The performance results were all either 99 or 100. Below are the results for each webpage.
 
+### Home page
 ![lighthouse-home](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/lighthouse-home.png)
 
+### Find Us page
 ![lighthouse-findus](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/lighthouse-findus.png)
 
+### Covid-19 page
 ![lighthouse-covid](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/lighthouse-covid.png)
 
+### FAQs page
 ![lighthouse-faqs](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/lighthouse-faqs.png)
 
+### Contact Us page
 ![lighthouse-contact](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/lighthouse-contact.png)
 
 ## Bugs 
@@ -434,7 +441,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 ![sidemenu-bug](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/side-bug.png)
 
-2. When submitting the contact form on the contact us page, the form was allowing a submission if only white space was entered.
+2. When submitting the contact form on the contact us page, the form was allowing a submission if only white space was entered. This was also an issue I fixed with the map form.
 
     * To fix it I used an isEmpty function, then added an if statement to check if this function was false. If it was true, an alert would show to let the user know that the input was invalid.
 
@@ -458,7 +465,9 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 * To the side of the image is a list of points of what services are offered.
 
-* Underneath there are 4 steps to show the user exactly how to the service works.
+* Underneath there are 4 steps to show the user exactly how the service works.
+
+* The FAQ page also gives examples of services that are offered.
 
 #### Aim
 
@@ -466,7 +475,13 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 #### Result
 
-* The header and footer are available on each page, to easily cycle through the site to find the page you need.
+* The side menu is available on each page, and helps the user easily navigate throughout the site.
+
+* The logo at the top of the page also links the user back to the homepage is clicked.
+
+* The contact us section of the footer also has a link to the contact us page.
+
+* Where the FAQ section mentions the branches, it has a link to the find us page.
 
 * Any external links are made to open to a new tab to keep the user on our website.
 
@@ -478,7 +493,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 * The footer, which is on each page has a phone number for general enquiries, as well as a link to the contact us page. The phone number, when clicked, takes the user to their phone app. 
 
-* The find us page has a phone number for each individual branch.
+* The find us page has a phone number for each individual branch. This also, when clicked takes the user to their phone app. 
 
 * The contact us page has a contact form where the user can send a message to the company with any questions or queries. 
 
@@ -510,9 +525,9 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 * The simple 4 steps of how to use an online pharmacy are shown in the carousel on the home page.
 
-* Shown in a simple way, giving the user the chance to interact with the site.
+* This is displayed in a simple way, giving the user the chance to interact with the site.
 
-* Each step is summarised in a caption for the image, and if the patient wants more info, all they have to do is hover over the image to get a more detailed description.
+* Each step is summarised in a caption for the image, and if the patient wants more info, all they have to do is hover over the image to get a more detailed description. This is explained to the user just above the carousel.
 
 #### Aim
 
@@ -558,7 +573,9 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 * Each link was clicked various times on each page and each device to ensure they were all working correctly.
 
-* I asked 10 family and friends to use the website and look for any errors or bugs. I asked them all to view them on their laptop, phone and tablet. I also asked them to try all the links, and to fill the form out with errors to see if it allowed them to submit.
+* The map form was filled out numerous times using each option with each location, and each time checking correct alerts are shown and checking the test email is received correctly.
+
+* I asked 10 family and friends to use the website and look for any errors or bugs. I asked them all to view the website on their laptop, phone and tablet. I also asked them to try all the links, and to fill the forms out with errors to see if it allowed them to submit.
 
 # **DEPLOYMENT**
 
@@ -594,19 +611,19 @@ The link above gave me the following steps.
 
 ### To clone this project:
 
-    1. Follow this link to the [Project GitHub repository](https://github.com/alisadiq91/PharmOnline)
+1. Follow this link to the [Project GitHub repository](https://github.com/alisadiq91/PharmOnline)
 
-    2. Under the repository name, click "Clone or download".
+2. Under the repository name, click "Clone or download".
 
-    3. In the Clone with HTTPs section, copy the clone URL for the repository.
+3. In the Clone with HTTPs section, copy the clone URL for the repository.
 
-    4. In your local IDE open GIT Bash.
+4. In your local IDE open GIT Bash.
 
-    5. Change the current working directory location where you want the cloned directory to be made.
+5. Change the current working directory location where you want the cloned directory to be made.
 
-    6. Type git clone, and then paste the URL you copied in Step 3.
+6. Type git clone, and then paste the URL you copied in Step 3.
 
-    7. Press Enter. Your local clone will be created.
+7. Press Enter. Your local clone will be created.
 
 # **CONTENT**
 
