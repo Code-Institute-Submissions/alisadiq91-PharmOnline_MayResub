@@ -106,14 +106,14 @@ function sendEmail() {
 				  });
             }
             else{
-            alert("Invalid content entered. Fields can not be empty or only whitespace");
+            alert("Invalid content entered. Fields can not be empty.");
             }
         }
         else{
-        alert("Invalid content entered. Fields can not be empty or only whitespace");
+        alert("Invalid content entered. Fields can not be empty.");
         }
       }
     else{
-    alert("Invalid content entered. Fields can not be empty or only whitespace");
+    alert("Invalid content entered. Fields can not be empty.");
     }
 }

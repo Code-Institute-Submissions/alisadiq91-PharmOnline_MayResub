@@ -102,12 +102,19 @@ function myOptions(optionSelect)
 
 // email submission for branch form
 
+// function checking if string is empty to use with form which I used from https://stackoverflow.com/questions/154059/how-can-i-check-for-an-empty-undefined-null-string-in-javascript
+
+String.prototype.isEmpty = function() {
+    return (this.length === 0 || !this.trim());
+};
+
 //alert for map form submission 
 
  function showAlertMap(){
       alert("Thank you for choosing us!\nYour selected store will get back to you with your confirmed appointment.");
   }
 
+  
 //emailJS map form
 
 function sendEmailMap() {
@@ -117,6 +124,8 @@ function sendEmailMap() {
 	  var email = document.getElementById("fromEmailMap").value;
       var otherMessage = document.getElementById("otherBox").value;
       var date = document.getElementById("date").value;
+        if (service == "other"){
+                if (otherMessage.isEmpty() == false){
         
 	  
 				 var mapEmail ={
@@ -139,5 +148,33 @@ function sendEmailMap() {
 					  document.getElementById("date").value = '';
                       
 				  });
+                }
+                else{
+                alert("Invalid content entered. Fields can not be empty.");
+                }
+        }
+        else{
+             var mapEmail ={
+                      branchChoice: branch,
+                      serviceSelected: service,
+					  fromEmailMap: email,
+                      otherBox: otherMessage,
+					  date: date,
+             };
+
+                    // emailJs key 
+                  emailjs.send("service_mc16uvn","template_hsw25dm", mapEmail)
+				  .then(function(response){
+					  console.log("success", response.status);
+					  showAlertMap(); 
+                      document.getElementById("branchChoice").value = '';
+                      document.getElementById("serviceSelected").value = '';
+					  document.getElementById("fromEmailMap").value = '';
+                      document.getElementById("otherBox").value = '';
+					  document.getElementById("date").value = '';
+                      
+				  });
+        }
 }
+                
   
