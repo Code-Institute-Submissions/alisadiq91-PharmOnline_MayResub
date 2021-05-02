@@ -124,7 +124,7 @@ function sendEmailMap() {
 	  var email = document.getElementById("fromEmailMap").value;
       var otherMessage = document.getElementById("otherBox").value;
       var date = document.getElementById("date").value;
-        if (service == "other"){
+        if (service == "other"){ //if statement to see if user selected the "other" option
                 if (otherMessage.isEmpty() == false){
         
 	  
@@ -154,15 +154,7 @@ function sendEmailMap() {
                 }
         }
         else{
-             var mapEmail ={
-                      branchChoice: branch,
-                      serviceSelected: service,
-					  fromEmailMap: email,
-                      otherBox: otherMessage,
-					  date: date,
-             };
-
-                    // emailJs key 
+                  // emailJs key 
                   emailjs.send("service_mc16uvn","template_hsw25dm", mapEmail)
 				  .then(function(response){
 					  console.log("success", response.status);

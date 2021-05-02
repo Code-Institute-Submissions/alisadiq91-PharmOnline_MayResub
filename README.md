@@ -4,7 +4,7 @@
 
 [View the live project here.](https://alisadiq91.github.io/PharmOnline/index.html)
 
-This is the second project of my software development career. I have decided to create a website for a chain of pharmacies that have decided to delve into the world of online pharmacy. The company name has changed to PharmOnline because of this. I will be using what I have learnt from my recent modules covering Javascript and Jquery, as well as how to include an API in a website. I will also use HTML, CSS and the bootstrap framework. I am attempting to show a vast range of what I have learnt, including emailJS, incorporating APIs and using Javascript to monitor how a user interacts with the website. 
+This is the second project of my software development career. I have decided to create a website for a chain of pharmacies that have decided to delve into the world of online pharmacy. The company name has changed to PharmOnline because of this. I will be using what I have learnt from my recent modules covering JavaScript and Jquery, as well as how to include an API in a website. I will also use HTML, CSS and the bootstrap framework. I am attempting to show a vast range of what I have learnt, including EmailJS, incorporating APIs and using JavaScript to monitor how a user interacts with the website. 
 The website is for the company Pharm Online. They are an online Pharmacy which also have 4 stores across the UK.  They currently have a site in Leeds, Bradford, York and Manchester, which each offer a range of services. They also have a mobile app which is used for online ordering of medication. 
 
 # **UX - USER STORIES**
@@ -52,7 +52,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 # **Header**
 
-* Languages used – HTML, CSS, Javascript
+* Languages used – HTML, CSS, JavaScript
 
 * Frameworks, Libraries & Programs Used - [Font Awesome](https://fontawesome.com/), Bootstrap
 
@@ -95,7 +95,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 # **Home page**
 
-* Languages used – HTML, CSS, Javascript using JQuery
+* Languages used – HTML, CSS, JavaScript using JQuery
 
 * Frameworks, Libraries & Programs Used - [Font Awesome](https://fontawesome.com/), Bootstrap
 
@@ -117,7 +117,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 ![main-page-desktop](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/main-page-desktop.png)
 
-4.	Steps of how it works – Originally I planned to have these steps as all showing and the user to hover to reveal more information. I decided to change this and add bootstrap carousel to improve the interactivity for the user. This gives the website a cleaner and simpler look. There are 4 steps, each shown as an image with a caption. When this is hovered over (clicked on mobile/tablet), a more detailed description of this step is revealed to the user. This was done using Javascript with JQuery.
+4.	Steps of how it works – Originally, I planned to have these steps as all showing and the user to hover to reveal more information. I decided to change this and add bootstrap carousel to improve the interactivity for the user. This gives the website a cleaner and simpler look. There are 4 steps, each shown as an image with a caption. When this is hovered over (clicked on mobile/tablet), a more detailed description of this step is revealed to the user. This was done using JavaScript with JQuery.
 
 ![steps-desktop](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/steps-desktop.png)
 
@@ -135,7 +135,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 # **Find us page**
 
-* Languages used – HTML, CSS, Javascript
+* Languages used – HTML, CSS, JavaScript
 
 * Frameworks, Libraries & Programs Used - Bootstrap, EmailJS, [Font Awesome](https://fontawesome.com/)
 
@@ -167,11 +167,11 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 ![map-popup-window](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-popup.png)
 
-5. The user now chooses which service they require from the drop down list. If a service is chosen, another input field appears asking the customer what date they would like to book their appointment.
+5. The user now chooses which service they require from the drop-down list. If a service is chosen, another input field appears asking the customer what date they would like to book their appointment.
 
 ![form-date](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/form-date.png)
 
-6. If the user chooses the option "Other", instead of an input field for the date, an text box appears for the user to type what service they require from the chosen branch.
+6. If the user chooses the option "Other", instead of an input field for the date, a text box appears for the user to type what service they require from the chosen branch.
 
 ![form-other](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/form-other.png)
 
@@ -179,7 +179,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 ![map-form-alert](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/form-map-alert.png)
 
-8. The submit button is [btn-primary](https://getbootstrap.com/docs/4.0/components/buttons/) button from bootstrap as the colour matches the theme used in the website.
+8. The submit button is [btn-primary](https://getbootstrap.com/docs/4.0/components/buttons/) button from bootstrap as the colour matches the theme used on the website.
 
 9. Using EmailJS, the business is now sent this request by email in the format shown below. If the user selects the Other option, the text they type in is shown under additional info.
 
@@ -191,7 +191,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 ![map-form-email](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-email.png)
 
-11. I had to set the date and other text box as required using Javascript as they should only be required depending on which service is selected.
+11. I had to set the date and other text box as required using JavaScript as they should only be required depending on which service is selected.
 
 ![map-form-date](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-date.png)
 
@@ -224,7 +224,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 ## Features
 
-1.	This is a very simple page, with Covid-19 being a huge part of peoples lives at present, it is expected that a website providing healthcare to include some advice on how to stay safe. The page includes the 3 ways to stay safe advised by the UK government, with a video embedded to go along with each piece of advice. I have also added a font awesome logo to each point. 
+1.	This is a very simple page, with Covid-19 being a huge part of people's lives at present, it is expected that a website providing healthcare to include some advice on how to stay safe. The page includes the 3 ways to stay safe advised by the UK government, with a video embedded to go along with each piece of advice. I have also added a font awesome logo to each point. 
 
 #### **Covid19 page desktop** 
 
@@ -236,7 +236,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 # **FAQ page**
 
-* Languages used – HTML, CSS, Javascript using JQuery
+* Languages used – HTML, CSS, JavaScript using JQuery
 
 * Frameworks, Libraries & Programs Used - Bootstrap, [Font Awesome](https://fontawesome.com/)
 
@@ -254,7 +254,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 ![faq-desktop](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/faq-desktop.png)
 
-2. This has been executed using Javascript with JQuery. When the user clicks each question, a toggle effect is used. The answer to the question is now shown underneath. It is given a speed of “500” to give a smooth effect.
+2. This has been executed using JavaScript with JQuery. When the user clicks each question, a toggle effect is used. The answer to the question is now shown underneath. It is given a speed of “500” to give a smooth effect.
 
 ![faq-answers](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/faq-answers.png)
 
@@ -270,7 +270,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 # **Contact us page**
 
-* Languages used – HTML, CSS, Javascript
+* Languages used – HTML, CSS, JavaScript
 
 * Frameworks, Libraries & Programs Used - Bootstrap, EmailJS, [Font Awesome](https://fontawesome.com/)
 
@@ -294,13 +294,13 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 ![contactus-required-email](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/contactus-emailreq.png)
 
-3. The Full Name and Message fields are where I have used Javascript to ensure that not just white spaces are entered into the fields.
+3. The Full Name and Message fields are where I have used JavaScript to ensure that not just white spaces are entered into the fields.
 
 ![contactus-invalid-entry](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/contact-us-invalid.png)
 
 4.	The message box is larger than the other input fields to give the user more space to write a detailed message.
 
-5.	The submit button is [btn-primary](https://getbootstrap.com/docs/4.0/components/buttons/) button from bootstrap as the colour matches the theme used in the website. 
+5.	The submit button is [btn-primary](https://getbootstrap.com/docs/4.0/components/buttons/) button from bootstrap as the colour matches the theme used on the website. 
 
 6.	Once the submit button is pressed, the user will receive an alert thanking them for submitting a message and that usually the company replies within 2 working days.
 
@@ -308,7 +308,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 7.	Once submitted, the fields automatically reset. 
 
-8.	I used Javascript to use emailJs so that any questions or messages submitted can be seen by the company on their email address. This is currently set up to my email address. I have also set the email template to send a copy of the email to the sender so anyone using the form can be sure it has sent. The message is shown in the format below:
+8.	I used JavaScript to use EmailJs so that any questions or messages submitted can be seen by the company on their email address. This is currently set up to my email address. I have also set the email template to send a copy of the email to the sender so anyone using the form can be sure it has sent. The message is shown in the format below:
 
 ![email-example](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/emailJS.png)
 
@@ -326,7 +326,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 * CSS3 
 
-* Javascript
+* JavaScript
 
 ## Frameworks, Libraries & Programs Used
 
@@ -344,7 +344,7 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 * JQuery
 
-    * JQuery was used to make it easier to use Javascript. It gives me cleaner code and is very effective.
+    * JQuery was used to make it easier to use JavaScript. It gives me cleaner code and is very effective.
 
 * EmailJS
 
@@ -398,9 +398,9 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 ![css-validator](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/cssvalidator.png)
 
-## Javascript code quality tool
+## JavaScript code quality tool
 
-* I used [JSHint](https://jshint.com/) to check my Javascript code for errors.
+* I used [JSHint](https://jshint.com/) to check my JavaScript code for errors.
 
 * There were no errors for either map.js or script.js
 
@@ -426,17 +426,17 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 1. When implementing a side nav onto the pages, when opening and closing the nav, the text was collapsing which failed to give a smooth transition.
 
-    * To fix it I had to create a class then use css to hide this, which could then be shown using javascript.
+    * To fix it I had to create a class then use css to hide this, which could then be shown using JavaScript.
 
-    * I also set a timeout function in javascript to give it a smoother transition.
+    * I also set a timeout function in JavaScript to give it a smoother transition.
 
-    * The Javascript code is shown below:
+    * The JavaScript code is shown below:
 
 ![sidemenu-bug](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/side-bug.png)
 
 2. When submitting the contact form on the contact us page, the form was allowing a submission if only white space was entered.
 
-    * To fix it I used an isEmpty function, then added an if statement to check if this function was false. If it was true, an alert would show to to let the user know that the input was invalid.
+    * To fix it I used an isEmpty function, then added an if statement to check if this function was false. If it was true, an alert would show to let the user know that the input was invalid.
 
     * The code used is shown below:
 
@@ -626,7 +626,7 @@ The link above gave me the following steps.
     
         2. To have only the required sections of the find us page form show if different options are clicked one after the other. 
 
-        3. On the contact form - how to not allow white spaces to be submitted using Javascript.
+        3. On the contact form - how to not allow white spaces to be submitted using JavaScript.
 
 # **MEDIA**
 
