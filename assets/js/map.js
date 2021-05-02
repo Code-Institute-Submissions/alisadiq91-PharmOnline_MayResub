@@ -154,7 +154,15 @@ function sendEmailMap() {
                 }
         }
         else{
-                  // emailJs key 
+             var mapEmail ={
+                      branchChoice: branch,
+                      serviceSelected: service,
+					  fromEmailMap: email,
+                      otherBox: otherMessage,
+					  date: date,
+             };
+
+                    // emailJs key 
                   emailjs.send("service_mc16uvn","template_hsw25dm", mapEmail)
 				  .then(function(response){
 					  console.log("success", response.status);
