@@ -197,9 +197,13 @@ With me being vastly experienced in this sector, I know exactly what the consume
 
 ![map-form-other](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-other.png)
 
-12. The EmailJS is set to send a copy of the email to the user for test purposes.
+12. I used a function in javascript to detect that a string was entered into the other text box, an alert pops up to the user if only whitespace is entered.
 
-13. The page is set to respond to smaller devices by having the branch address on top of the form instead of side by side.
+![map-form-invalid](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-invalid.png)
+
+13. The EmailJS is set to send a copy of the email to the user for test purposes.
+
+14. The page is set to respond to smaller devices by having the branch address on top of the form instead of side by side.
 
 ![map-form-mobile](https://github.com/alisadiq91/PharmOnline/blob/master/assets/images/map-form-mobile.png)
 
